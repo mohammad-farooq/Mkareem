@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cover Letter — Mohammed Kareem</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%231d4ed8'/><stop offset='1' stop-color='%230891b2'/></linearGradient></defs><rect width='100' height='100' rx='22' fill='url(%23g)'/><text x='50' y='68' font-size='46' font-weight='800' text-anchor='middle' fill='white' font-family='Arial'>MK</text></svg>">
+<style>
+  :root {
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --accent: #0891b2;
+    --purple: #4f46e5;
+    --dark: #0f172a;
+    --gray: #64748b;
+    --light: #f8fafc;
+    --white: #ffffff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif;
+    color: var(--dark);
+    line-height: 1.6;
+    background: var(--light);
+    overflow-x: hidden;
+  }
+
+  /* ================= ANIMATIONS ================= */
+  @keyframes gradientShift { 0%,100%{background-position:0% 50%} 50%{background-position:100% 50%} }
+  @keyframes fadeInUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
+  @keyframes waveMove1 { 0% { transform: translateX(0) translateY(0) scale(1); } 50% { transform: translateX(-3%) translateY(-2%) scale(1.02); } 100% { transform: translateX(0) translateY(0) scale(1); } }
+  @keyframes waveMove2 { 0% { transform: translateX(0) translateY(0); } 50% { transform: translateX(2%) translateY(3%); } 100% { transform: translateX(0) translateY(0); } }
+  @keyframes waveMove3 { 0%,100% { transform: translateX(0) rotate(0deg); } 50% { transform: translateX(-1.5%) rotate(0.3deg); } }
+
+  /* ================= BACKGROUNDS ================= */
+  .page-bg {
+    position: fixed; inset: 0; z-index: -2; background: #e2e8f0;
+    background-image: radial-gradient(at 20% 20%, rgba(37,99,235,0.15) 0%, transparent 50%), radial-gradient(at 80% 30%, rgba(79,70,229,0.1) 0%, transparent 50%), radial-gradient(at 50% 80%, rgba(8,145,178,0.15) 0%, transparent 50%);
+    background-size: 200% 200%; animation: gradientShift 20s ease infinite;
+  }
+  .bg-waves { position: fixed; inset: 0; width: 100%; height: 100%; opacity: 0.3; pointer-events: none; z-index: -1; }
+  .bg-waves svg { width: 100%; height: 100%; display: block; }
+  .bg-waves .wave-group-1 { animation: waveMove1 18s ease-in-out infinite; transform-origin: center; }
+  .bg-waves .wave-group-2 { animation: waveMove2 22s ease-in-out infinite; transform-origin: center; }
+  .bg-waves .wave-group-3 { animation: waveMove3 26s ease-in-out infinite; transform-origin: center; }
+  .bg-waves path { fill: none; stroke-width: 0.8; stroke-linecap: round; }
+
+  /* ================= NAVIGATION ================= */
+  .top-nav { width: 100%; padding: 20px 24px; display: flex; justify-content: space-between; align-items: center; max-width: 1000px; margin: 0 auto; position: relative; z-index: 10; }
+  .back-btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    text-decoration: none; color: var(--primary); font-weight: 600; font-size: 0.95rem;
+    background: var(--white); padding: 10px 20px; border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(37,99,235,0.15); transition: all 0.3s;
+  }
+  .back-btn:hover { transform: translateX(-5px); box-shadow: 0 8px 25px rgba(37,99,235,0.25); color: var(--primary-dark); }
+  .print-btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    text-decoration: none; color: #fff; font-weight: 600; font-size: 0.95rem;
+    background: linear-gradient(135deg, var(--primary), var(--accent)); padding: 10px 20px; border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(37,99,235,0.3); transition: all 0.3s; border: none; cursor: pointer; font-family: inherit;
+  }
+  .print-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(37,99,235,0.5); }
+
+  /* ================= COVER LETTER PAPER ================= */
+  .letter-wrapper { max-width: 900px; margin: 20px auto 80px; padding: 0 24px; position: relative; z-index: 2; }
+  .letter-paper {
+    background: var(--white); border-radius: 24px; padding: 50px 60px;
+    box-shadow: 0 30px 80px rgba(15,23,42,0.15), 0 0 0 1px rgba(255,255,255,0.5);
+    position: relative; overflow: hidden;
+    animation: fadeInUp 0.8s ease both;
+  }
+  .letter-paper::before {
+    content: ""; position: absolute; top: 0; left: 0; right: 0; height: 8px;
+    background: linear-gradient(90deg, var(--primary), var(--accent), var(--purple), var(--primary));
+    background-size: 300% 100%; animation: gradientShift 5s ease infinite;
+  }
+
+  /* ================= LETTER HEADER ================= */
+  .letter-header { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #e2e8f0; padding-bottom: 25px; margin-bottom: 25px; }
+  .sender-info h1 { font-size: 2rem; font-weight: 800; color: var(--dark); margin-bottom: 4px; line-height: 1.1; }
+  .sender-info h2 { font-size: 1rem; font-weight: 600; color: var(--primary); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1.5px; }
+  .sender-contact { font-size: 0.85rem; color: var(--gray); line-height: 1.7; }
+  .sender-contact a { color: var(--gray); text-decoration: none; transition: color 0.3s; }
+  .sender-contact a:hover { color: var(--primary); }
+
+  .letter-logo { width: 160px; height: 180px; border-radius: 16px; background: #e2e8f0; overflow: hidden; box-shadow: 0 10px 25px rgba(37,99,235,0.2); border: 3px solid #0c215b; flex-shrink: 0; }
+  .letter-logo img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+
+  /* ================= LETTER CONTENT ================= */
+  .date-line { font-size: 0.9rem; color: var(--gray); margin-bottom: 20px; font-weight: 500; }
+  .recipient-info { margin-bottom: 25px; }
+  .recipient-info p { font-size: 0.95rem; color: var(--dark); font-weight: 600; margin-bottom: 2px; }
+  .recipient-info span { font-size: 0.9rem; color: var(--gray); display: block; }
+
+  .salutation { font-size: 1rem; font-weight: 600; color: var(--dark); margin-bottom: 15px; }
+
+  /* Reduced paragraph spacing & font size slightly for shorter content */
+  .letter-body p { font-size: 0.95rem; color: #334155; margin-bottom: 12px; text-align: justify; line-height: 1.6; }
+  .letter-body strong { color: var(--dark); font-weight: 700; }
+  
+  .highlight-box { background: rgba(37,99,235,0.05); border-left: 4px solid var(--primary); padding: 12px 16px; border-radius: 0 12px 12px 0; margin: 15px 0; }
+  .highlight-box p { margin-bottom: 0; font-style: italic; color: #1e293b; font-size: 0.95rem; }
+
+  .letter-list { list-style: none; margin-bottom: 12px; }
+  .letter-list li { position: relative; padding-left: 24px; margin-bottom: 6px; font-size: 0.95rem; color: #334155; line-height: 1.5; }
+  .letter-list li::before { content: "•"; color: var(--primary); font-weight: bold; font-size: 1.3rem; position: absolute; left: 0; top: -2px; }
+
+  /* ================= SIGN-OFF ================= */
+  .sign-off { margin-top: 25px; }
+  .sign-off p { font-size: 0.95rem; color: #334155; margin-bottom: 20px; }
+  .signature { font-family: 'Georgia', serif; font-size: 1.8rem; font-style: italic; color: var(--primary-dark); margin-bottom: 8px; letter-spacing: 2px; opacity: 0.8; }
+  .sign-off h3 { font-size: 1rem; font-weight: 800; color: var(--dark); margin-bottom: 4px; }
+  .sign-off span { font-size: 0.85rem; color: var(--gray); }
+
+  .letter-footer { margin-top: 30px; padding-top: 16px; border-top: 1px solid #e2e8f0; text-align: center; font-size: 0.8rem; color: #94a3b8; }
+
+  /* ================= RESPONSIVE ================= */
+  @media (max-width: 768px) {
+    .letter-paper { padding: 35px 25px; }
+    .letter-header { flex-direction: column-reverse; align-items: center; text-align: center; gap: 20px; }
+    .sender-info h1 { font-size: 1.8rem; }
+    .letter-body p { text-align: left; }
+  }
+
+  /* ================= PRINT STYLES ================= */
+  @media print {
+    body { background: #fff; }
+    .page-bg, .bg-waves, .top-nav { display: none !important; }
+    .letter-wrapper { margin: 0; padding: 0; max-width: 100%; }
+    .letter-paper { box-shadow: none; border-radius: 0; padding: 0; }
+    .letter-paper::before { display: none; }
+    .letter-header { border-bottom: 2px solid #000; }
+    .highlight-box { background: #f0f0f0 !important; border-left-color: #000; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .letter-list li::before { color: #000; }
+    .signature { color: #000; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Background Elements -->
+<div class="page-bg"></div>
+<div class="bg-waves">
+  <svg viewBox="0 0 1440 800" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#2563eb" stop-opacity="0.6"/>
+        <stop offset="50%" stop-color="#0891b2" stop-opacity="0.3"/>
+        <stop offset="100%" stop-color="#4f46e5" stop-opacity="0.6"/>
+      </linearGradient>
+    </defs>
+    <g class="wave-group-1">
+      <path d="M0,400 C200,200 400,600 600,400 C800,200 1000,600 1200,400 C1350,300 1440,400 1440,400" stroke="url(#waveGrad1)"/>
+      <path d="M0,420 C200,220 400,620 600,420 C800,220 1000,620 1200,420 C1350,320 1440,420 1440,420" stroke="url(#waveGrad1)"/>
+    </g>
+    <g class="wave-group-2">
+      <path d="M0,350 C300,150 600,550 900,350 C1150,200 1350,400 1440,350" stroke="url(#waveGrad1)"/>
+    </g>
+  </svg>
+</div>
+
+<!-- Top Navigation -->
+<div class="top-nav">
+  <a href="https://mkareem57.github.io/profile/full-profile.html" target="_blank" rel="noopener" class="back-btn">← View Resume</a>
+  <button class="print-btn" onclick="window.print()">🖨️ Print / Save as PDF</button>
+</div>
+
+<!-- Cover Letter Content -->
+<div class="letter-wrapper">
+  <div class="letter-paper">
+    
+    <!-- Header -->
+    <div class="letter-header">
+      <div class="sender-info">
+        <h1>Mohammed Kareem</h1>
+        <h2>Civil & QA/QC Engineer</h2>
+        <div class="sender-contact">
+          Riyadh, Saudi Arabia<br>
+          <a href="tel:+966537836478">+966 537 836 478</a> | <a href="tel:+966570849844">+966 570 849 844</a><br>
+          <a href="mailto:mohammedkareem0507@gmail.com">mohammedkareem0507@gmail.com</a><br>
+          <a href="https://linkedin.com/in/mohammedkareem0507" target="_blank">linkedin.com/in/mohammedkareem0507</a>
+        </div>
+      </div>
+      
+      <div class="letter-logo">
+        <img src="https://raw.githubusercontent.com/MKareem57/profile/main/images/pic4.jpeg" alt="Mohammed Kareem Photo" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=160&h=180&q=80'">
+      </div>
+    </div>
+
+    <!-- Date & Recipient -->
+    <div class="date-line" id="currentDate">October 24, 2024</div>
+    
+    <div class="recipient-info">
+      <p>Hiring Manager</p>
+      <span>Construction & Engineering Department</span>
+      <!-- <span>Company Name</span> -->
+    </div>
+
+    <!-- Salutation -->
+    <div class="salutation">Dear Hiring Manager,</div>
+
+    <!-- Body (Reduced Content) -->
+    <div class="letter-body">
+      <p>I am writing to express my strong interest in the <strong>Civil / QA/QC Engineer</strong> position. With over <strong>8 years of experience</strong> in material inspection, testing, and construction management, alongside my SCE accreditation, I am confident in my ability to immediately contribute to your team.</p>
+
+      <p>My expertise spans structural steel fabrication, concrete technology, and soil mechanics. I have a proven track record of implementing Quality Management Systems (QMS) and ensuring strict compliance with international codes, including <strong>ASTM, ACI, BS, and IS</strong>.</p>
+
+      <div class="highlight-box">
+        <p>"My core philosophy is that quality is not an act, but a habit. I strive to foster a culture of continuous improvement and zero-defect delivery."</p>
+      </div>
+
+      <p>In my recent role at Al Munayaz Co., I successfully:</p>
+      <ul class="letter-list">
+        <li>Managed comprehensive inspections for structural steel fabrication and erection according to approved ITPs.</li>
+        <li>Evaluated soil, asphalt, and steel materials to guarantee compliance with project specifications.</li>
+        <li>Led root cause analysis (RCA) and implemented corrective actions (CAPA) to maintain project timelines.</li>
+        <li>Conducted internal audits aligned with ISO 9001:2015, 14001:2015, and 45001:2018 standards.</li>
+      </ul>
+
+      <p>With a Master's in Environmental Engineering and a Bachelor's in Civil Engineering, I possess strong technical proficiencies in AutoCAD, Staad Pro, and LIMS. I am eager to bring my attention to detail and commitment to quality to your organization.</p>
+
+      <p>Thank you for your time and consideration. I look forward to discussing how my skills align with your project requirements.</p>
+    </div>
+
+    <!-- Sign Off -->
+    <div class="sign-off">
+      <p>Sincerely,</p>
+      <div class="signature">Mohammed Kareem</div>
+      <h3>Mohammed Kareem</h3>
+      <span>Civil & QA/QC Engineer | SCE Member (12598905)</span>
+    </div>
+
+    <!-- Enclosures -->
+    <div class="letter-footer">
+      <p>Enclosures: Curriculum Vitae, SCE Certificate, ISO Certifications</p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  // Set current date dynamically
+  const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+  document.getElementById('currentDate').textContent = new Date().toLocaleDateString('en-US', dateOptions);
+</script>
+
+</body>
+</html>
