@@ -1,0 +1,3417 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mohammed Kareem — Civil & QA/QC Engineer</title>
+        <meta
+            name="description"
+            content="Portfolio of Mohammed Kareem — Civil Engineer and QA/QC Specialist based in Riyadh, Saudi Arabia."
+        />
+        <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%231d4ed8'/><stop offset='1' stop-color='%230891b2'/></linearGradient></defs><rect width='100' height='100' rx='22' fill='url(%23g)'/><text x='50' y='68' font-size='46' font-weight='800' text-anchor='middle' fill='white' font-family='Arial'>MK</text></svg>"
+        />
+        <style>
+            :root {
+                --primary: #2563eb;
+                --primary-dark: #1d4ed8;
+                --accent: #0891b2;
+                --purple: #4f46e5;
+                --pink: #db2777;
+                --yellow: #eab308;
+                --whatsapp: #25d366;
+                --orange: #ea580c;
+                --teal: #0d9488;
+                --dark: #0f172a;
+                --gray: #64748b;
+                --light: #f8fafc;
+                --white: #ffffff;
+                --radius: 18px;
+                --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+                --shadow-hover: 0 30px 60px rgba(37, 99, 235, 0.28);
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html {
+                scroll-behavior: smooth;
+            }
+            body {
+                font-family:
+                    "Segoe UI",
+                    system-ui,
+                    -apple-system,
+                    Roboto,
+                    Arial,
+                    sans-serif;
+                color: var(--dark);
+                line-height: 1.6;
+                background: var(--white);
+                overflow-x: hidden;
+            }
+
+            /* ================= ANIMATIONS ================= */
+            @keyframes float {
+                0%,
+                100% {
+                    transform: translateY(0) rotate(0);
+                }
+                50% {
+                    transform: translateY(-20px) rotate(3deg);
+                }
+            }
+            @keyframes pulseGlow {
+                0%,
+                100% {
+                    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4);
+                }
+                50% {
+                    box-shadow: 0 0 0 20px rgba(37, 99, 235, 0);
+                }
+            }
+            @keyframes pulseWhatsApp {
+                0%,
+                100% {
+                    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+                }
+                50% {
+                    box-shadow: 0 0 0 22px rgba(37, 211, 102, 0);
+                }
+            }
+            @keyframes gradientShift {
+                0%,
+                100% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+            }
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(40px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            @keyframes fadeInUp3D {
+                from {
+                    opacity: 0;
+                    transform: perspective(800px) translateY(50px) translateZ(-60px) rotateX(-15deg);
+                }
+                to {
+                    opacity: 1;
+                    transform: perspective(800px) translateY(0) translateZ(0) rotateX(0);
+                }
+            }
+            @keyframes marquee {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+            @keyframes kenburns {
+                0% {
+                    transform: scale(1) translate(0, 0);
+                }
+                100% {
+                    transform: scale(1.15) translate(-20px, -10px);
+                }
+            }
+            @keyframes rainbowShift {
+                0% {
+                    background-position: 0% 50%;
+                }
+                100% {
+                    background-position: 300% 50%;
+                }
+            }
+            @keyframes spin {
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+            @keyframes slideInChat {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px) scale(0.9);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0) scale(1);
+                }
+            }
+            @keyframes chatBubble {
+                0%,
+                100% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-5px);
+                }
+            }
+            @keyframes logoShake {
+                0%,
+                100% {
+                    transform: rotate(0deg) scale(1);
+                }
+                5% {
+                    transform: rotate(-8deg) scale(1.05);
+                }
+                10% {
+                    transform: rotate(8deg) scale(1.05);
+                }
+                15% {
+                    transform: rotate(-6deg) scale(1.03);
+                }
+                20% {
+                    transform: rotate(6deg) scale(1.03);
+                }
+                25% {
+                    transform: rotate(0deg) scale(1);
+                }
+            }
+            @keyframes waveMove1 {
+                0% {
+                    transform: translateX(0) translateY(0) scale(1);
+                }
+                50% {
+                    transform: translateX(-3%) translateY(-2%) scale(1.02);
+                }
+                100% {
+                    transform: translateX(0) translateY(0) scale(1);
+                }
+            }
+            @keyframes waveMove2 {
+                0% {
+                    transform: translateX(0) translateY(0);
+                }
+                50% {
+                    transform: translateX(2%) translateY(3%);
+                }
+                100% {
+                    transform: translateX(0) translateY(0);
+                }
+            }
+            @keyframes waveMove3 {
+                0%,
+                100% {
+                    transform: translateX(0) rotate(0deg);
+                }
+                50% {
+                    transform: translateX(-1.5%) rotate(0.3deg);
+                }
+            }
+            @keyframes dashFlow {
+                to {
+                    stroke-dashoffset: -2000;
+                }
+            }
+            @keyframes orbFloat1 {
+                0%,
+                100% {
+                    transform: translate(0, 0) scale(1);
+                }
+                33% {
+                    transform: translate(60px, -40px) scale(1.15);
+                }
+                66% {
+                    transform: translate(-40px, 50px) scale(0.9);
+                }
+            }
+            @keyframes orbFloat2 {
+                0%,
+                100% {
+                    transform: translate(0, 0) scale(1);
+                }
+                50% {
+                    transform: translate(-80px, -50px) scale(1.2);
+                }
+            }
+            @keyframes orbFloat3 {
+                0%,
+                100% {
+                    transform: translate(0, 0) scale(1);
+                }
+                50% {
+                    transform: translate(70px, 60px) scale(0.85);
+                }
+            }
+            @keyframes rotateRing {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+            @keyframes meshShift {
+                0%,
+                100% {
+                    background-position:
+                        0% 50%,
+                        100% 50%,
+                        50% 100%;
+                }
+                50% {
+                    background-position:
+                        100% 50%,
+                        0% 50%,
+                        50% 0%;
+                }
+            }
+            @keyframes shakeError {
+                0%,
+                100% {
+                    transform: translateX(0);
+                }
+                25% {
+                    transform: translateX(-5px);
+                }
+                75% {
+                    transform: translateX(5px);
+                }
+            }
+
+            /* Section 3D background base */
+            .section-3d {
+                position: relative;
+                isolation: isolate;
+            }
+            .section-3d > .bg-layer {
+                position: absolute;
+                inset: 0;
+                overflow: hidden;
+                pointer-events: none;
+                z-index: 0;
+            }
+            .section-3d > .container,
+            .section-3d > .section-content {
+                position: relative;
+                z-index: 2;
+            }
+
+            /* ============ 3D WAVE LINES ============ */
+            .bg-waves {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0.4;
+                pointer-events: none;
+            }
+            .bg-waves svg {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+            .bg-waves .wave-group-1 {
+                animation: waveMove1 18s ease-in-out infinite;
+                transform-origin: center;
+            }
+            .bg-waves .wave-group-2 {
+                animation: waveMove2 22s ease-in-out infinite;
+                transform-origin: center;
+            }
+            .bg-waves .wave-group-3 {
+                animation: waveMove3 26s ease-in-out infinite;
+                transform-origin: center;
+            }
+            .bg-waves path {
+                fill: none;
+                stroke-width: 0.6;
+                stroke-linecap: round;
+            }
+            .bg-waves path.flow-line {
+                stroke-dasharray: 12 6;
+                animation: dashFlow 30s linear infinite;
+            }
+
+            /* Floating orbs */
+            .bg-orb {
+                position: absolute;
+                border-radius: 50%;
+                filter: blur(70px);
+                opacity: 0.4;
+                pointer-events: none;
+            }
+            .bg-orb.orb-1 {
+                width: 380px;
+                height: 380px;
+                background: radial-gradient(circle, var(--primary), transparent);
+                top: -80px;
+                left: -60px;
+                animation: orbFloat1 16s ease-in-out infinite;
+            }
+            .bg-orb.orb-2 {
+                width: 320px;
+                height: 320px;
+                background: radial-gradient(circle, var(--purple), transparent);
+                bottom: -80px;
+                right: -60px;
+                animation: orbFloat2 20s ease-in-out infinite;
+            }
+            .bg-orb.orb-3 {
+                width: 280px;
+                height: 280px;
+                background: radial-gradient(circle, var(--accent), transparent);
+                top: 40%;
+                right: 20%;
+                animation: orbFloat3 18s ease-in-out infinite;
+            }
+            .bg-orb.orb-4 {
+                width: 300px;
+                height: 300px;
+                background: radial-gradient(circle, var(--pink), transparent);
+                top: 20%;
+                left: 30%;
+                animation: orbFloat2 22s ease-in-out infinite reverse;
+            }
+
+            /* Mesh & Dots */
+            .bg-mesh {
+                position: absolute;
+                inset: 0;
+                background: radial-gradient(at 20% 20%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
+                    radial-gradient(at 80% 30%, rgba(79, 70, 229, 0.1) 0%, transparent 50%),
+                    radial-gradient(at 50% 80%, rgba(8, 145, 178, 0.1) 0%, transparent 50%);
+                background-size:
+                    200% 200%,
+                    200% 200%,
+                    200% 200%;
+                animation: meshShift 20s ease-in-out infinite;
+            }
+            .bg-dots {
+                position: absolute;
+                inset: 0;
+                background-image: radial-gradient(rgba(37, 99, 235, 0.2) 1px, transparent 1px);
+                background-size: 30px 30px;
+                mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+                -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+                opacity: 0.5;
+            }
+
+            /* ================= SCROLL PROGRESS & REVEAL ================= */
+            .scroll-progress {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 3px;
+                width: 0%;
+                background: linear-gradient(90deg, var(--primary), var(--accent), var(--purple));
+                z-index: 9999;
+                box-shadow: 0 0 12px rgba(37, 99, 235, 0.6);
+                transition: width 0.1s;
+            }
+            .reveal {
+                opacity: 0;
+                transform: translateY(50px);
+                transition:
+                    opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+                    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+            }
+            .reveal.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            .reveal-left {
+                transform: translateX(-70px);
+            }
+            .reveal-left.visible {
+                transform: translateX(0);
+            }
+            .reveal-right {
+                transform: translateX(70px);
+            }
+            .reveal-right.visible {
+                transform: translateX(0);
+            }
+            .reveal-scale {
+                transform: scale(0.85);
+            }
+            .reveal-scale.visible {
+                transform: scale(1);
+            }
+
+            /* ================= HEADER ================= */
+            header {
+                position: sticky;
+                top: 0;
+                z-index: 100;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.85);
+                backdrop-filter: blur(20px) saturate(180%);
+                border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+                transition: all 0.4s ease;
+            }
+            header.scrolled {
+                background: rgba(255, 255, 255, 0.97);
+                box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+            }
+            .nav {
+                max-width: 1280px;
+                margin: 0 auto;
+                padding: 14px 24px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .logo {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                text-decoration: none;
+            }
+            .logo-icon {
+                width: 48px;
+                height: 48px;
+                border-radius: 14px;
+                background: linear-gradient(135deg, var(--primary), var(--accent));
+                background-size: 200% 200%;
+                animation:
+                    gradientShift 5s ease infinite,
+                    logoShake 3s ease-in-out infinite;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-weight: 900;
+                font-size: 0.9rem;
+                letter-spacing: -0.5px;
+                box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+                position: relative;
+                overflow: hidden;
+            }
+            .logo-icon::after {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+                transform: translateX(-100%);
+                animation: rainbowShift 3s ease infinite;
+            }
+            .logo:hover .logo-icon {
+                animation:
+                    gradientShift 5s ease infinite,
+                    logoShake 0.5s ease-in-out infinite;
+            }
+            .logo-text {
+                display: flex;
+                flex-direction: column;
+                line-height: 1.1;
+            }
+            .logo-text strong {
+                font-size: 1.05rem;
+                font-weight: 800;
+                color: var(--dark);
+                letter-spacing: -0.3px;
+            }
+            .logo-text span {
+                font-size: 0.68rem;
+                font-weight: 600;
+                color: var(--gray);
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+            }
+
+            .nav-links {
+                display: flex;
+                gap: 18px;
+                list-style: none;
+                align-items: center;
+            }
+            .nav-links li {
+                position: relative;
+            }
+            .nav-links a {
+                text-decoration: none;
+                color: var(--gray);
+                font-weight: 500;
+                font-size: 0.88rem;
+                position: relative;
+                transition: color 0.3s;
+                padding: 6px 0;
+                display: block;
+            }
+            .nav-links a::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background: linear-gradient(90deg, var(--primary), var(--accent));
+                transition: width 0.3s ease;
+            }
+            .nav-links a:hover {
+                color: var(--primary);
+            }
+            .nav-links a:hover::after {
+                width: 100%;
+            }
+            .nav-links a.active {
+                color: var(--primary);
+                font-weight: 600;
+            }
+            .nav-links a.active::after {
+                width: 100%;
+            }
+            .nav-cta {
+                background: linear-gradient(135deg, var(--primary), var(--accent));
+                color: #fff !important;
+                padding: 10px 18px !important;
+                border-radius: 10px;
+                font-weight: 600;
+                transition: all 0.3s;
+                position: relative;
+                overflow: hidden;
+            }
+            .nav-cta::after {
+                display: none !important;
+            }
+            .nav-cta::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+                transition: left 0.5s;
+            }
+            .nav-cta:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+            }
+            .nav-cta:hover::before {
+                left: 100%;
+            }
+            .menu-toggle {
+                display: none;
+                font-size: 1.6rem;
+                background: none;
+                border: none;
+                cursor: pointer;
+                color: var(--dark);
+                transition: transform 0.3s;
+            }
+            .menu-toggle:hover {
+                transform: scale(1.15) rotate(90deg);
+            }
+
+            /* ================= HERO BANNER ================= */
+            .hero-banner {
+                position: relative;
+                width: 100%;
+                min-height: 90vh;
+                display: flex;
+                align-items: center;
+                background: #0f172a;
+                overflow: hidden;
+                padding: 100px 24px;
+            }
+            .hero-banner .bg-image {
+                position: absolute;
+                inset: 0;
+                background-image: url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1920&q=80");
+                background-size: cover;
+                background-position: center;
+                filter: brightness(0.3);
+                z-index: 0;
+            }
+            .hero-banner .bg-image::after {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(
+                    135deg,
+                    rgba(15, 23, 42, 0.95),
+                    rgba(37, 99, 235, 0.4) 60%,
+                    rgba(15, 23, 42, 0.95)
+                );
+            }
+
+            .hero-content {
+                position: relative;
+                z-index: 2;
+                max-width: 1280px;
+                margin: 0 auto;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1.2fr 0.8fr;
+                gap: 60px;
+                align-items: center;
+                color: #fff;
+            }
+
+            .hero-text h1 {
+                font-size: clamp(2.5rem, 5vw, 4.5rem);
+                line-height: 1.1;
+                font-weight: 800;
+                letter-spacing: -1.5px;
+                margin-bottom: 20px;
+                animation: fadeInUp 0.8s ease 0.2s both;
+            }
+            .hero-text h1 .accent {
+                background: linear-gradient(135deg, #60a5fa, #06b6d4, #3b82f6, #60a5fa);
+                background-size: 300% 300%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: gradientShift 6s ease infinite;
+            }
+            .hero-text p {
+                font-size: 1.15rem;
+                color: #cbd5e1;
+                max-width: 600px;
+                margin-bottom: 30px;
+                animation: fadeInUp 0.8s ease 0.35s both;
+            }
+            .hero-badge {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                padding: 8px 18px;
+                border-radius: 30px;
+                font-size: 0.85rem;
+                font-weight: 700;
+                margin-bottom: 24px;
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+                background: rgba(37, 99, 235, 0.2);
+                border: 1px solid rgba(37, 99, 235, 0.5);
+                color: #93c5fd;
+                animation: fadeInUp 0.8s ease 0.1s both;
+            }
+            .hero-badge::before {
+                content: "";
+                width: 8px;
+                height: 8px;
+                background: #60a5fa;
+                border-radius: 50%;
+                box-shadow: 0 0 12px #60a5fa;
+                animation: pulseGlow 2s infinite;
+            }
+            .hero-buttons {
+                display: flex;
+                gap: 16px;
+                flex-wrap: wrap;
+                animation: fadeInUp 0.8s ease 0.5s both;
+            }
+
+            /* Hero Info Card */
+            .hero-info-card {
+                background: rgba(255, 255, 255, 0.06);
+                border: 1px solid rgba(255, 255, 255, 0.14);
+                border-radius: 24px;
+                padding: 40px;
+                backdrop-filter: blur(18px);
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+                animation: fadeInUp3D 1s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
+            }
+            .hero-info-card h3 {
+                font-size: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 2.5px;
+                color: #60a5fa;
+                margin-bottom: 24px;
+                font-weight: 700;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                padding-bottom: 12px;
+            }
+            .hero-info-row {
+                display: flex;
+                justify-content: space-between;
+                padding: 12px 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+                font-size: 0.95rem;
+            }
+            .hero-info-row:last-child {
+                border-bottom: none;
+            }
+            .hero-info-row .lbl {
+                color: #94a3b8;
+            }
+            .hero-info-row .val {
+                font-weight: 600;
+                color: #fff;
+                text-align: right;
+            }
+
+            /* ================= SECTIONS ================= */
+            section {
+                width: 100%;
+                padding: 100px 24px;
+                position: relative;
+                overflow: hidden;
+            }
+            .container {
+                max-width: 1280px;
+                margin: 0 auto;
+            }
+            .section-head {
+                text-align: center;
+                max-width: 720px;
+                margin: 0 auto 70px;
+                position: relative;
+                z-index: 2;
+            }
+            .section-head .eyebrow {
+                display: inline-block;
+                color: var(--primary);
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-size: 0.78rem;
+                margin-bottom: 16px;
+                padding: 6px 18px;
+                background: rgba(37, 99, 235, 0.08);
+                border-radius: 20px;
+                border: 1px solid rgba(37, 99, 235, 0.15);
+            }
+            .section-head h2 {
+                font-size: clamp(1.8rem, 4vw, 2.8rem);
+                font-weight: 800;
+                letter-spacing: -1px;
+                margin-bottom: 16px;
+                line-height: 1.15;
+                background: linear-gradient(135deg, #0f172a, #2563eb, #4f46e5, #0f172a);
+                background-size: 300% 300%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: gradientShift 8s ease infinite;
+            }
+            .section-head p {
+                color: var(--gray);
+                font-size: 1.05rem;
+            }
+
+            /* ================= BUTTONS ================= */
+            .btn {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                padding: 15px 32px;
+                border-radius: 12px;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 1rem;
+                transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+                cursor: pointer;
+                border: none;
+                position: relative;
+                overflow: hidden;
+                font-family: inherit;
+            }
+            .btn-primary {
+                background: linear-gradient(135deg, var(--primary), var(--accent));
+                color: #fff;
+                background-size: 200% 200%;
+                box-shadow: 0 8px 24px rgba(37, 99, 235, 0.35);
+            }
+            .btn-primary:hover {
+                transform: translateY(-3px) scale(1.03);
+                box-shadow: 0 16px 40px rgba(37, 99, 235, 0.5);
+                background-position: 100% 0;
+            }
+            .btn-primary::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+                transition: left 0.6s;
+            }
+            .btn-primary:hover::before {
+                left: 100%;
+            }
+            .btn-outline {
+                background: transparent;
+                color: #fff;
+                border: 2px solid rgba(255, 255, 255, 0.3);
+                backdrop-filter: blur(10px);
+            }
+            .btn-outline:hover {
+                border-color: #60a5fa;
+                background: rgba(37, 99, 235, 0.15);
+                transform: translateY(-3px) scale(1.03);
+                box-shadow: 0 12px 30px rgba(37, 99, 235, 0.25);
+            }
+            .btn .arrow {
+                transition: transform 0.3s;
+                display: inline-block;
+            }
+            .btn:hover .arrow {
+                transform: translateX(5px);
+            }
+
+            /* ================= ABOUT ================= */
+            #about {
+                background: linear-gradient(180deg, #fff 0%, #f0f4ff 50%, #fff 100%);
+            }
+            .about-grid {
+                display: grid;
+                grid-template-columns: 1fr 1.15fr;
+                gap: 70px;
+                align-items: center;
+            }
+
+            /* About Image */
+            .about-image-wrap {
+                position: relative;
+                border-radius: 24px;
+                overflow: hidden;
+                box-shadow: 0 30px 60px rgba(15, 23, 42, 0.2);
+                transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+                background: #e2e8f0;
+                aspect-ratio: 4/5;
+                border: 3px solid #0c215b;
+            }
+            .about-image-wrap:hover {
+                transform: scale(1.02) rotate(-1deg);
+            }
+            .about-image-wrap img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top;
+                display: block;
+                transition: transform 0.8s ease;
+            }
+            .about-image-wrap:hover img {
+                transform: scale(1.08);
+            }
+            .about-image-overlay {
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(180deg, transparent 50%, rgba(15, 23, 42, 0.9));
+                display: flex;
+                align-items: flex-end;
+                padding: 30px;
+                color: #fff;
+            }
+            .about-image-overlay h3 {
+                font-size: 1.35rem;
+                font-weight: 700;
+            }
+            .about-image-overlay p {
+                color: #cbd5e1;
+                font-size: 0.9rem;
+                margin-top: 4px;
+            }
+            .about-image-badge {
+                position: absolute;
+                top: 24px;
+                right: 24px;
+                background: linear-gradient(135deg, var(--yellow), #f59e0b);
+                color: #0f172a;
+                padding: 10px 18px;
+                border-radius: 12px;
+                font-weight: 800;
+                font-size: 0.85rem;
+                box-shadow: 0 10px 25px rgba(234, 179, 8, 0.5);
+                transform: rotate(6deg);
+                animation: float 4s ease-in-out infinite;
+                z-index: 3;
+            }
+
+            .about-text h2 {
+                font-size: clamp(1.8rem, 4vw, 2.6rem);
+                font-weight: 800;
+                letter-spacing: -1px;
+                margin-bottom: 20px;
+                line-height: 1.15;
+            }
+            .about-text h2 .grad {
+                background: linear-gradient(135deg, var(--primary), var(--accent));
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .about-text p {
+                color: var(--gray);
+                margin-bottom: 16px;
+                font-size: 1.02rem;
+            }
+            .about-credentials {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 14px;
+                margin: 26px 0;
+            }
+            .cred-item {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                padding: 14px 18px;
+                background: #fff;
+                border-radius: 12px;
+                border: 1px solid #eef2f7;
+                transition: all 0.3s;
+                font-size: 0.92rem;
+                font-weight: 600;
+                box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+            }
+            .cred-item:nth-child(1) .ic {
+                background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            }
+            .cred-item:nth-child(2) .ic {
+                background: linear-gradient(135deg, #0891b2, #0e7490);
+            }
+            .cred-item:nth-child(3) .ic {
+                background: linear-gradient(135deg, #4f46e5, #4338ca);
+            }
+            .cred-item:nth-child(4) .ic {
+                background: linear-gradient(135deg, #ea580c, #c2410c);
+            }
+            .cred-item:hover {
+                border-color: rgba(37, 99, 235, 0.3);
+                transform: translateX(6px);
+                box-shadow: 0 8px 20px rgba(37, 99, 235, 0.12);
+            }
+            .cred-item .ic {
+                width: 34px;
+                height: 34px;
+                border-radius: 10px;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 0.9rem;
+                flex-shrink: 0;
+            }
+
+            /* ================= SKILLS ================= */
+            #skills {
+                background: linear-gradient(180deg, #f8fafc 0%, #e0f2fe 100%);
+            }
+            .skills-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 24px;
+                position: relative;
+                z-index: 2;
+            }
+            .skill-card {
+                background: #fff;
+                padding: 30px;
+                border-radius: 20px;
+                box-shadow: var(--shadow);
+                border: 1px solid #eef2f7;
+                transition: all 0.4s;
+                text-align: center;
+            }
+            .skill-card:hover {
+                transform: translateY(-10px);
+                box-shadow: var(--shadow-hover);
+                border-color: rgba(37, 99, 235, 0.3);
+            }
+            .skill-icon {
+                font-size: 2.5rem;
+                margin-bottom: 15px;
+                display: inline-block;
+                transition: transform 0.4s;
+            }
+            .skill-card:hover .skill-icon {
+                transform: scale(1.2) rotate(10deg);
+            }
+            .skill-card h3 {
+                font-size: 1.1rem;
+                margin-bottom: 10px;
+                font-weight: 700;
+                color: var(--dark);
+            }
+            .skill-card p {
+                font-size: 0.9rem;
+                color: var(--gray);
+            }
+
+            .progress-container {
+                margin-top: 20px;
+            }
+            .progress-item {
+                margin-bottom: 15px;
+                text-align: left;
+            }
+            .progress-label {
+                display: flex;
+                justify-content: space-between;
+                font-size: 0.85rem;
+                font-weight: 600;
+                margin-bottom: 5px;
+                color: var(--dark);
+            }
+            .progress-bar {
+                height: 8px;
+                background: #e2e8f0;
+                border-radius: 4px;
+                overflow: hidden;
+            }
+            .progress-fill {
+                height: 100%;
+                background: linear-gradient(90deg, var(--primary), var(--accent));
+                border-radius: 4px;
+                width: 0;
+                transition: width 1.5s ease-in-out;
+            }
+            .reveal.visible .progress-fill {
+                width: var(--target-width);
+            }
+
+            /* ================= EXPERIENCE ================= */
+            #experience {
+                background: #fff;
+            }
+            .exp-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+                position: relative;
+                z-index: 2;
+            }
+            .exp-card {
+                background: #f8fafc;
+                border-radius: 20px;
+                padding: 40px;
+                border: 1px solid #e2e8f0;
+                border-left: 5px solid var(--primary);
+                transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+                position: relative;
+                overflow: hidden;
+            }
+            .exp-card:hover {
+                transform: translateY(-8px);
+                background: #fff;
+                box-shadow: 0 20px 40px rgba(37, 99, 235, 0.1);
+                border-left-color: var(--accent);
+            }
+            .exp-card::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 150px;
+                height: 150px;
+                background: radial-gradient(circle, rgba(37, 99, 235, 0.05), transparent 70%);
+                border-radius: 50%;
+                transition: transform 0.4s;
+            }
+            .exp-card:hover::before {
+                transform: scale(1.5);
+            }
+            .exp-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 20px;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .exp-date {
+                display: inline-block;
+                padding: 6px 14px;
+                background: rgba(37, 99, 235, 0.1);
+                color: var(--primary);
+                font-weight: 700;
+                font-size: 0.8rem;
+                border-radius: 20px;
+            }
+            .exp-title h3 {
+                font-size: 1.3rem;
+                font-weight: 800;
+                color: var(--dark);
+                margin-bottom: 4px;
+            }
+            .exp-title h4 {
+                font-size: 1rem;
+                font-weight: 600;
+                color: var(--gray);
+            }
+            .exp-card ul {
+                list-style: none;
+                padding-left: 0;
+            }
+            .exp-card ul li {
+                font-size: 0.95rem;
+                color: var(--gray);
+                margin-bottom: 10px;
+                position: relative;
+                padding-left: 24px;
+                line-height: 1.5;
+            }
+            .exp-card ul li::before {
+                content: "✓";
+                color: var(--primary);
+                font-weight: bold;
+                position: absolute;
+                left: 0;
+                top: 2px;
+            }
+
+            /* ================= CERTIFICATIONS ================= */
+            #certifications {
+                background: linear-gradient(180deg, #f8fafc 0%, #e0f2fe 100%);
+            }
+            .cert-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                gap: 30px;
+                position: relative;
+                z-index: 2;
+            }
+            .cert-card {
+                background: #fff;
+                padding: 40px 30px;
+                border-radius: 24px;
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                border-top: 5px solid var(--primary);
+                box-shadow: var(--shadow);
+                transition: all 0.4s;
+            }
+            .cert-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15);
+                border-top-color: var(--accent);
+            }
+            .cert-icon {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                background: rgba(37, 99, 235, 0.1);
+                color: var(--primary);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.8rem;
+                flex-shrink: 0;
+            }
+            .cert-text h3 {
+                font-size: 1.15rem;
+                font-weight: 800;
+                color: var(--dark);
+                margin-bottom: 6px;
+                line-height: 1.3;
+            }
+            .cert-text p {
+                font-size: 0.95rem;
+                color: var(--gray);
+                line-height: 1.5;
+            }
+
+            /* ================= DOCUMENTS ================= */
+            #documents {
+                background: #fff;
+            }
+            .doc-category {
+                margin-bottom: 60px;
+            }
+            .doc-category h3 {
+                font-size: 1.4rem;
+                font-weight: 800;
+                color: var(--dark);
+                margin-bottom: 24px;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+            .doc-category h3 span {
+                display: inline-block;
+                width: 40px;
+                height: 4px;
+                background: linear-gradient(90deg, var(--primary), var(--accent));
+                border-radius: 2px;
+            }
+
+            .doc-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 24px;
+            }
+            .doc-card {
+                background: #f8fafc;
+                border-radius: 16px;
+                overflow: hidden;
+                border: 1px solid #e2e8f0;
+                transition: all 0.3s;
+                box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+                cursor: pointer;
+                text-decoration: none;
+                display: block;
+            }
+            .doc-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 30px rgba(37, 99, 235, 0.15);
+                border-color: rgba(37, 99, 235, 0.3);
+            }
+            .doc-img-wrap {
+                width: 100%;
+                height: 200px;
+                background: #e2e8f0;
+                overflow: hidden;
+                position: relative;
+            }
+            .doc-img-wrap img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top center;
+                transition: transform 0.5s;
+            }
+            .doc-card:hover .doc-img-wrap img {
+                transform: scale(1.05);
+            }
+            .doc-img-wrap::after {
+                content: "View Document";
+                position: absolute;
+                inset: 0;
+                background: rgba(37, 99, 235, 0.8);
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+            .doc-card:hover .doc-img-wrap::after {
+                opacity: 1;
+            }
+            .doc-info {
+                padding: 20px;
+            }
+            .doc-info h4 {
+                font-size: 1rem;
+                font-weight: 700;
+                color: var(--dark);
+                margin-bottom: 4px;
+            }
+            .doc-info p {
+                font-size: 0.85rem;
+                color: var(--gray);
+            }
+
+            /* ================= CONTACT ================= */
+            #contact {
+                background: linear-gradient(135deg, #0f172a, #1e3a8a, #0f172a);
+                background-size: 200% 200%;
+                animation: gradientShift 12s ease infinite;
+                color: #fff;
+            }
+            .contact-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 60px;
+                align-items: center;
+                position: relative;
+                z-index: 2;
+            }
+            .contact-info h2 {
+                font-size: clamp(1.9rem, 4vw, 2.6rem);
+                font-weight: 800;
+                letter-spacing: -1px;
+                margin-bottom: 18px;
+                line-height: 1.15;
+                background: linear-gradient(135deg, #fff, #93c5fd, #c4b5fd, #fff);
+                background-size: 300% 300%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: gradientShift 8s ease infinite;
+            }
+            .contact-info p {
+                color: #cbd5e1;
+                margin-bottom: 30px;
+                font-size: 1.02rem;
+            }
+            .contact-item {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                padding: 14px 18px;
+                border-radius: 12px;
+                margin-bottom: 12px;
+                background: rgba(255, 255, 255, 0.04);
+                border: 1px solid rgba(255, 255, 255, 0.08);
+                transition: all 0.3s;
+                text-decoration: none;
+                color: inherit;
+            }
+            .contact-item:hover {
+                background: rgba(37, 99, 235, 0.15);
+                border-color: rgba(37, 99, 235, 0.4);
+                transform: translateX(8px);
+            }
+            .contact-item .ic {
+                width: 44px;
+                height: 44px;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.1rem;
+                flex-shrink: 0;
+            }
+            .contact-item:nth-child(2) .ic {
+                background: linear-gradient(135deg, #25d366, #128c7e);
+            }
+            .contact-item:nth-child(3) .ic {
+                background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            }
+            .contact-item:nth-child(4) .ic {
+                background: linear-gradient(135deg, #0077b5, #005582);
+            }
+            .contact-item .txt {
+                font-size: 0.95rem;
+            }
+            .contact-item .txt strong {
+                display: block;
+                color: #fff;
+                margin-bottom: 2px;
+                font-size: 0.8rem;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+            .contact-item .txt span {
+                color: #cbd5e1;
+            }
+
+            .contact-form {
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(255, 255, 255, 0.12);
+                border-radius: 24px;
+                padding: 40px;
+                backdrop-filter: blur(15px);
+                transition: transform 0.5s;
+            }
+            .contact-form:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 25px 60px rgba(37, 99, 235, 0.25);
+            }
+            .contact-form h3 {
+                font-size: 1.4rem;
+                margin-bottom: 24px;
+                font-weight: 700;
+            }
+            .form-group {
+                margin-bottom: 18px;
+                position: relative;
+            }
+            .form-group input,
+            .form-group textarea {
+                width: 100%;
+                padding: 14px 18px;
+                background: rgba(255, 255, 255, 0.06);
+                border: 1px solid rgba(255, 255, 255, 0.15);
+                border-radius: 10px;
+                color: #fff;
+                font-family: inherit;
+                font-size: 0.95rem;
+                transition: all 0.3s;
+                outline: none;
+            }
+            .form-group input::placeholder,
+            .form-group textarea::placeholder {
+                color: #94a3b8;
+            }
+            .form-group input:focus,
+            .form-group textarea:focus {
+                border-color: var(--primary);
+                background: rgba(37, 99, 235, 0.1);
+                box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+            }
+            .form-group textarea {
+                resize: vertical;
+                min-height: 100px;
+                font-family: inherit;
+            }
+            .contact-form button {
+                width: 100%;
+                justify-content: center;
+                background: linear-gradient(90deg, #2563eb, #4f46e5, #0891b2, #2563eb) !important;
+                background-size: 300% 100% !important;
+                animation: rainbowShift 5s linear infinite;
+                box-shadow: 0 8px 24px rgba(37, 99, 235, 0.4);
+                font-size: 1.05rem;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+            }
+            .contact-form button:hover {
+                background-position: 100% 0 !important;
+                box-shadow: 0 14px 40px rgba(37, 99, 235, 0.6) !important;
+                transform: translateY(-3px) scale(1.02);
+            }
+
+            /* Form Validation */
+            .error-msg {
+                display: none;
+                color: #f87171;
+                font-size: 0.82rem;
+                margin-top: 6px;
+                padding-left: 4px;
+            }
+            .form-group.error input,
+            .form-group.error textarea {
+                border-color: #f87171 !important;
+                background: rgba(248, 113, 113, 0.08) !important;
+                animation: shakeError 0.4s ease;
+            }
+            .form-group.error .error-msg {
+                display: block;
+            }
+            .form-status {
+                margin-top: 18px;
+                border-radius: 10px;
+                font-size: 0.92rem;
+                text-align: center;
+                max-height: 0;
+                overflow: hidden;
+                transition: all 0.4s ease;
+            }
+            .form-status.show {
+                max-height: 120px;
+                padding: 14px 18px;
+            }
+            .form-status.success {
+                background: rgba(34, 197, 94, 0.15);
+                border: 1px solid rgba(34, 197, 94, 0.4);
+                color: #4ade80;
+            }
+            .form-status.error {
+                background: rgba(248, 113, 113, 0.15);
+                border: 1px solid rgba(248, 113, 113, 0.4);
+                color: #f87171;
+            }
+
+            /* ================= FOOTER ================= */
+            footer {
+                width: 100%;
+                background: #060a14;
+                color: #94a3b8;
+                padding: 70px 24px 30px;
+                position: relative;
+                overflow: hidden;
+            }
+            .footer-grid {
+                max-width: 1280px;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+                gap: 40px;
+                margin-bottom: 50px;
+                position: relative;
+                z-index: 2;
+                align-items: start;
+            }
+            .footer-col h4 {
+                color: #fff;
+                font-size: 1.1rem;
+                margin-bottom: 24px;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+                position: relative;
+                padding-bottom: 12px;
+            }
+            .footer-col h4::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 40px;
+                height: 2px;
+                background: linear-gradient(90deg, var(--primary), var(--accent));
+                border-radius: 2px;
+            }
+            .footer-col p {
+                font-size: 0.95rem;
+                line-height: 1.7;
+                margin-bottom: 20px;
+                color: #94a3b8;
+            }
+            .footer-col ul {
+                list-style: none;
+            }
+            .footer-col ul li {
+                margin-bottom: 12px;
+            }
+            .footer-col ul a {
+                color: #94a3b8;
+                text-decoration: none;
+                font-size: 0.95rem;
+                transition: all 0.3s;
+                display: inline-block;
+            }
+            .footer-col ul a:hover {
+                color: #60a5fa;
+                transform: translateX(6px);
+            }
+
+            /* Footer Contact Lines */
+            .footer-contact-line {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                margin-bottom: 16px;
+                font-size: 0.95rem;
+                color: #94a3b8;
+                text-decoration: none;
+                transition: all 0.3s;
+                line-height: 1.5;
+            }
+            .footer-contact-line:hover {
+                color: #60a5fa;
+                transform: translateX(4px);
+            }
+            .footer-contact-line .fi {
+                width: 36px;
+                height: 36px;
+                border-radius: 10px;
+                background: rgba(37, 99, 235, 0.1);
+                border: 1px solid rgba(37, 99, 235, 0.2);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 0.95rem;
+                flex-shrink: 0;
+                transition: all 0.3s;
+            }
+            .footer-contact-line:hover .fi {
+                background: linear-gradient(135deg, var(--primary), var(--accent));
+                border-color: transparent;
+                color: #fff;
+            }
+
+            /* Footer Social */
+            .footer-social {
+                display: flex;
+                gap: 12px;
+                margin-top: 20px;
+            }
+            .footer-social a {
+                width: 44px;
+                height: 44px;
+                border-radius: 12px;
+                background: rgba(255, 255, 255, 0.05);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #94a3b8;
+                text-decoration: none;
+                font-size: 1rem;
+                transition: all 0.3s;
+                font-weight: 700;
+                border: 1px solid rgba(255, 255, 255, 0.08);
+            }
+            .footer-social a:hover {
+                background: linear-gradient(135deg, var(--primary), var(--accent));
+                color: #fff;
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(37, 99, 235, 0.4);
+                border-color: transparent;
+            }
+
+            .footer-bottom {
+                max-width: 1280px;
+                margin: 0 auto;
+                padding-top: 30px;
+                border-top: 1px solid rgba(255, 255, 255, 0.08);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 20px;
+                font-size: 0.9rem;
+                position: relative;
+                z-index: 2;
+            }
+            .footer-bottom p {
+                color: #64748b;
+            }
+            .footer-bottom a {
+                color: #60a5fa;
+                text-decoration: none;
+                transition: color 0.3s;
+                font-weight: 600;
+            }
+            .footer-bottom a:hover {
+                color: #93c5fd;
+            }
+
+            /* ================= WHATSAPP LIVE CHAT ================= */
+            .whatsapp-float {
+                position: fixed;
+                right: 24px;
+                bottom: 96px;
+                z-index: 999;
+                display: flex;
+                align-items: center;
+                gap: 0;
+                text-decoration: none;
+                transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            }
+            .whatsapp-float .wa-btn {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background: linear-gradient(135deg, #25d366, #128c7e);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-size: 1.8rem;
+                box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5);
+                animation: pulseWhatsApp 2.5s infinite;
+                transition: all 0.3s;
+                position: relative;
+                flex-shrink: 0;
+                cursor: pointer;
+            }
+            .whatsapp-float .wa-btn svg {
+                width: 32px;
+                height: 32px;
+                fill: #fff;
+                transition: transform 0.3s;
+            }
+            .whatsapp-float .wa-label {
+                background: #fff;
+                color: #0f172a;
+                padding: 10px 18px;
+                border-radius: 30px;
+                font-weight: 700;
+                font-size: 0.9rem;
+                white-space: nowrap;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+                margin-right: 10px;
+                max-width: 0;
+                overflow: hidden;
+                padding-left: 0;
+                padding-right: 0;
+                opacity: 0;
+                transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+                transform: translateX(20px);
+                pointer-events: none;
+                border: 1px solid #e2e8f0;
+            }
+            .whatsapp-float:hover .wa-label {
+                max-width: 340px;
+                opacity: 1;
+                padding: 10px 18px;
+                transform: translateX(0);
+            }
+            .whatsapp-float:hover .wa-btn {
+                transform: scale(1.1) rotate(-6deg);
+                box-shadow: 0 15px 40px rgba(37, 211, 102, 0.7);
+            }
+            .whatsapp-float:hover .wa-btn svg {
+                transform: rotate(6deg);
+            }
+            .whatsapp-float .wa-btn::after {
+                content: "";
+                position: absolute;
+                top: 2px;
+                right: 2px;
+                width: 14px;
+                height: 14px;
+                background: #ef4444;
+                border: 2px solid #fff;
+                border-radius: 50%;
+                animation: pulseGlow 1.5s infinite;
+                box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+            }
+
+            /* WhatsApp Chat Popup (Fixed styling) */
+            .wa-chat-popup {
+                position: fixed;
+                right: 24px;
+                bottom: 170px;
+                width: 320px;
+                background: #fff;
+                border-radius: 18px;
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+                overflow: hidden;
+                z-index: 998;
+                opacity: 0;
+                pointer-events: none;
+                transform: translateY(20px) scale(0.95);
+                transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            }
+            .wa-chat-popup.show {
+                opacity: 1;
+                pointer-events: auto;
+                transform: translateY(0) scale(1);
+            }
+            .wa-chat-head {
+                background: linear-gradient(135deg, #25d366, #128c7e);
+                color: #fff;
+                padding: 16px 18px;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                position: relative;
+            }
+            .wa-chat-head .avatar {
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+                background: #fff;
+                color: #128c7e;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 800;
+                font-size: 0.9rem;
+                flex-shrink: 0;
+            }
+            .wa-chat-head .meta strong {
+                display: block;
+                font-size: 0.95rem;
+                font-weight: 700;
+            }
+            .wa-chat-head .meta small {
+                font-size: 0.75rem;
+                opacity: 0.9;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+            .wa-chat-head .meta small::before {
+                content: "";
+                width: 7px;
+                height: 7px;
+                background: #4ade80;
+                border-radius: 50%;
+                box-shadow: 0 0 8px #4ade80;
+            }
+            .wa-chat-body {
+                padding: 20px;
+                background: #f8fafc;
+                font-size: 0.9rem;
+                color: #334155;
+                line-height: 1.6;
+            }
+            .wa-chat-body .bubble {
+                background: #fff;
+                padding: 12px 16px;
+                border-radius: 12px 12px 12px 0;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+                margin-bottom: 10px;
+                animation: slideInChat 0.5s ease both;
+            }
+            .wa-chat-body .bubble:nth-child(2) {
+                animation-delay: 0.15s;
+            }
+            .wa-chat-actions {
+                padding: 14px 18px 18px;
+                background: #fff;
+                border-top: 1px solid #f1f5f9;
+            }
+            .wa-chat-actions a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                padding: 14px;
+                background: linear-gradient(135deg, #25d366, #128c7e);
+                color: #fff;
+                text-decoration: none;
+                border-radius: 12px;
+                font-weight: 700;
+                font-size: 0.95rem;
+                transition: all 0.3s;
+                box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+            }
+            .wa-chat-actions a:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5);
+            }
+            .wa-chat-close {
+                position: absolute;
+                top: 12px;
+                right: 12px;
+                background: rgba(255, 255, 255, 0.2);
+                border: none;
+                color: #fff;
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                cursor: pointer;
+                font-size: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s;
+            }
+            .wa-chat-close:hover {
+                background: rgba(255, 255, 255, 0.35);
+                transform: rotate(90deg);
+            }
+
+            /* ================= BACK TO TOP ================= */
+            .back-top {
+                position: fixed;
+                bottom: 30px;
+                right: 30px;
+                width: 52px;
+                height: 52px;
+                border-radius: 50%;
+                background: linear-gradient(135deg, var(--primary), var(--accent));
+                color: #fff;
+                border: none;
+                font-size: 1.3rem;
+                cursor: pointer;
+                box-shadow: 0 8px 24px rgba(37, 99, 235, 0.45);
+                opacity: 0;
+                transform: translateY(20px) scale(0.8);
+                pointer-events: none;
+                transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+                z-index: 90;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .back-top.visible {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+                pointer-events: auto;
+            }
+            .back-top:hover {
+                transform: translateY(-5px) scale(1.1);
+                box-shadow: 0 15px 35px rgba(37, 99, 235, 0.6);
+            }
+
+            /* ================= RESPONSIVE ================= */
+            @media (max-width: 1000px) {
+                .hero-content {
+                    grid-template-columns: 1fr;
+                    gap: 40px;
+                }
+                .hero-info-card {
+                    max-width: 500px;
+                    margin: 0 auto;
+                }
+                .footer-grid {
+                    grid-template-columns: 1fr 1fr;
+                }
+                .exp-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+            @media (max-width: 900px) {
+                .about-grid {
+                    grid-template-columns: 1fr;
+                    gap: 40px;
+                }
+                .contact-grid {
+                    grid-template-columns: 1fr;
+                    gap: 40px;
+                }
+                .hero-banner {
+                    padding: 80px 20px;
+                }
+            }
+            @media (max-width: 720px) {
+                .nav-links {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    right: 0;
+                    background: #fff;
+                    flex-direction: column;
+                    align-items: stretch;
+                    gap: 0;
+                    padding: 10px 24px 20px;
+                    border-bottom: 1px solid #e2e8f0;
+                    display: none;
+                    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+                    max-height: calc(100vh - 80px);
+                    overflow-y: auto;
+                }
+                .nav-links.open {
+                    display: flex;
+                }
+                .nav-links li {
+                    padding: 14px 0;
+                    border-bottom: 1px solid #f1f5f9;
+                }
+                .nav-links li:last-child {
+                    border-bottom: none;
+                    padding-top: 20px;
+                }
+                .nav-links a {
+                    display: block;
+                    width: 100%;
+                    padding: 6px 0;
+                }
+                .nav-links a::after {
+                    display: none;
+                }
+                .menu-toggle {
+                    display: block;
+                }
+                section {
+                    padding: 70px 20px;
+                }
+                .footer-grid {
+                    grid-template-columns: 1fr;
+                    gap: 30px;
+                }
+                .footer-bottom {
+                    flex-direction: column;
+                    text-align: center;
+                }
+                .contact-form {
+                    padding: 28px 22px;
+                }
+                .back-top {
+                    bottom: 20px;
+                    right: 20px;
+                    width: 46px;
+                    height: 46px;
+                }
+                .whatsapp-float {
+                    right: 16px;
+                    bottom: 82px;
+                }
+                .whatsapp-float .wa-btn {
+                    width: 54px;
+                    height: 54px;
+                }
+                .whatsapp-float .wa-btn svg {
+                    width: 28px;
+                    height: 28px;
+                }
+                .wa-chat-popup {
+                    right: 16px;
+                    bottom: 150px;
+                    width: calc(100% - 32px);
+                    max-width: 320px;
+                }
+                .about-credentials {
+                    grid-template-columns: 1fr;
+                }
+                .cert-card {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 30px 20px;
+                }
+                .doc-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Scroll Progress -->
+        <div class="scroll-progress" id="scrollProgress"></div>
+
+        <!-- ================= HEADER ================= -->
+        <header id="header">
+            <nav class="nav">
+                <a href="#" class="logo">
+                    <div class="logo-icon">MK</div>
+                    <div class="logo-text">
+                        <strong>Mohammed Kareem</strong>
+                        <span>Civil & QA/QC Engineer</span>
+                    </div>
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#documents">Documents</a></li>
+                    <li><a href="#contact" class="nav-cta">Contact Me</a></li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+            </nav>
+        </header>
+
+        <!-- ================= HERO BANNER ================= -->
+        <section class="hero-banner" id="home">
+            <div class="bg-image"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">Available for Opportunities</div>
+                    <h1>Ensuring <span class="accent">Quality & Compliance</span> in Construction</h1>
+                    <p>
+                        I am a dedicated Civil Engineer and QA/QC Specialist with 8+ years of experience in material
+                        inspection, testing, and construction management. I ensure that every project meets the highest
+                        standards of safety, quality, and structural integrity.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Hire Me <span class="arrow">→</span></a>
+                        <button
+                            onclick="printResume()"
+                            class="btn btn-outline"
+                            style="background: rgba(255, 255, 255, 0.1)"
+                        >
+                            🖨️ Print / Save Resume
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-info-card">
+                    <h3>Professional Snapshot</h3>
+                    <div class="hero-info-row">
+                        <span class="lbl">Experience</span>
+                        <span class="val">8+ Years</span>
+                    </div>
+                    <div class="hero-info-row">
+                        <span class="lbl">Location</span>
+                        <span class="val">Riyadh, KSA</span>
+                    </div>
+                    <div class="hero-info-row">
+                        <span class="lbl">SCE Membership</span>
+                        <span class="val">Active (12598905)</span>
+                    </div>
+                    <div class="hero-info-row">
+                        <span class="lbl">Nationality</span>
+                        <span class="val">Indian</span>
+                    </div>
+                    <div class="hero-info-row">
+                        <span class="lbl">Languages</span>
+                        <span class="val">English, Arabic, Urdu, Hindi</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ABOUT ================= -->
+        <section id="about" class="section-3d">
+            <div class="bg-layer">
+                <div class="bg-waves">
+                    <svg viewBox="0 0 1440 800" preserveAspectRatio="none">
+                        <defs>
+                            <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#2563eb" stop-opacity="0.6" />
+                                <stop offset="50%" stop-color="#0891b2" stop-opacity="0.3" />
+                                <stop offset="100%" stop-color="#4f46e5" stop-opacity="0.6" />
+                            </linearGradient>
+                        </defs>
+                        <g class="wave-group-1">
+                            <path
+                                d="M0,400 C200,200 400,600 600,400 C800,200 1000,600 1200,400 C1350,300 1440,400 1440,400"
+                                stroke="url(#waveGrad1)"
+                            />
+                            <path
+                                d="M0,420 C200,220 400,620 600,420 C800,220 1000,620 1200,420 C1350,320 1440,420 1440,420"
+                                stroke="url(#waveGrad1)"
+                            />
+                        </g>
+                    </svg>
+                </div>
+                <div class="bg-mesh"></div>
+                <div class="bg-orb orb-1"></div>
+                <div class="bg-orb orb-3"></div>
+            </div>
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image-wrap reveal reveal-left">
+                        <div class="about-image-badge">8+ Years Exp.</div>
+                        <img
+                            src="https://raw.githubusercontent.com/MKareem57/profile/main/images/pic4.jpeg"
+                            alt="Mohammed Kareem Profile Photo"
+                            onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=80'"
+                        />
+                        <div class="about-image-overlay">
+                            <div>
+                                <h3>Mohammed Kareem</h3>
+                                <p>Civil Engineer | QA/QC Specialist</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-text reveal reveal-right">
+                        <span class="eyebrow">About Myself</span>
+                        <h2>Building Trust Through <span class="grad">Quality Engineering</span></h2>
+                        <p>
+                            To become an expert in the field of Civil and Quality Engineering, I have gained eight years
+                            of experience in Material Inspection, Testing, and Construction. I am looking forward to a
+                            career opportunity in Civil, Quality Engineering, and Consultancy.
+                        </p>
+                        <p>
+                            Currently based in Riyadh, Saudi Arabia, I hold a Master of Technology in Environmental
+                            Engineering from Amity University and a Bachelor of Technology in Civil Engineering.
+                        </p>
+
+                        <div class="about-credentials">
+                            <div class="cred-item"><span class="ic">🎓</span> M.Tech Environmental Eng.</div>
+                            <div class="cred-item"><span class="ic">🎓</span> B.Tech Civil Engineering</div>
+                            <div class="cred-item"><span class="ic">🏅</span> SCE Member (12598905)</div>
+                            <div class="cred-item"><span class="ic">📜</span> ISO Certified Auditor</div>
+                        </div>
+
+                        <div class="skill-tags" style="margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px">
+                            <span
+                                style="
+                                    padding: 7px 16px;
+                                    background: rgba(37, 99, 235, 0.1);
+                                    border: 1px solid rgba(37, 99, 235, 0.2);
+                                    border-radius: 20px;
+                                    font-size: 0.82rem;
+                                    font-weight: 600;
+                                    color: var(--primary);
+                                "
+                                >Material Inspection</span
+                            >
+                            <span
+                                style="
+                                    padding: 7px 16px;
+                                    background: rgba(37, 99, 235, 0.1);
+                                    border: 1px solid rgba(37, 99, 235, 0.2);
+                                    border-radius: 20px;
+                                    font-size: 0.82rem;
+                                    font-weight: 600;
+                                    color: var(--primary);
+                                "
+                                >Project Management</span
+                            >
+                            <span
+                                style="
+                                    padding: 7px 16px;
+                                    background: rgba(37, 99, 235, 0.1);
+                                    border: 1px solid rgba(37, 99, 235, 0.2);
+                                    border-radius: 20px;
+                                    font-size: 0.82rem;
+                                    font-weight: 600;
+                                    color: var(--primary);
+                                "
+                                >QA/QC Auditing</span
+                            >
+                            <span
+                                style="
+                                    padding: 7px 16px;
+                                    background: rgba(37, 99, 235, 0.1);
+                                    border: 1px solid rgba(37, 99, 235, 0.2);
+                                    border-radius: 20px;
+                                    font-size: 0.82rem;
+                                    font-weight: 600;
+                                    color: var(--primary);
+                                "
+                                >Structural Steel</span
+                            >
+                            <span
+                                style="
+                                    padding: 7px 16px;
+                                    background: rgba(37, 99, 235, 0.1);
+                                    border: 1px solid rgba(37, 99, 235, 0.2);
+                                    border-radius: 20px;
+                                    font-size: 0.82rem;
+                                    font-weight: 600;
+                                    color: var(--primary);
+                                "
+                                >Concrete Technology</span
+                            >
+                            <span
+                                style="
+                                    padding: 7px 16px;
+                                    background: rgba(37, 99, 235, 0.1);
+                                    border: 1px solid rgba(37, 99, 235, 0.2);
+                                    border-radius: 20px;
+                                    font-size: 0.82rem;
+                                    font-weight: 600;
+                                    color: var(--primary);
+                                "
+                                >Problem Solving</span
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SKILLS & TECHNICAL EXPERTISE ================= -->
+        <section id="skills" class="section-3d">
+            <div class="bg-layer">
+                <div class="bg-waves">
+                    <svg viewBox="0 0 1440 800" preserveAspectRatio="none">
+                        <g class="wave-group-2">
+                            <path
+                                d="M0,300 C240,100 480,500 720,300 C960,100 1200,500 1440,300"
+                                stroke="url(#waveGrad1)"
+                            />
+                            <path
+                                d="M0,320 C240,120 480,520 720,320 C960,120 1200,520 1440,320"
+                                stroke="url(#waveGrad1)"
+                            />
+                        </g>
+                    </svg>
+                </div>
+                <div class="bg-dots"></div>
+                <div class="bg-orb orb-2"></div>
+                <div class="bg-orb orb-4"></div>
+            </div>
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Technical Skills</span>
+                    <h2>Areas of Expertise</h2>
+                    <p>
+                        Comprehensive knowledge of construction materials, testing methods, and quality management
+                        systems.
+                    </p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card reveal" style="transition-delay: 0.05s">
+                        <div class="skill-icon">📐</div>
+                        <h3>Engineering Software</h3>
+                        <p>Proficient in industry-standard design and analysis tools.</p>
+                        <div class="progress-container">
+                            <div class="progress-item">
+                                <div class="progress-label"><span>AutoCAD</span><span>90%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="--target-width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-label"><span>Staad Pro</span><span>85%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="--target-width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-label"><span>LIMS</span><span>80%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="--target-width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card reveal" style="transition-delay: 0.1s">
+                        <div class="skill-icon">🔍</div>
+                        <h3>Inspection & Testing</h3>
+                        <p>Hands-on experience with field and lab testing.</p>
+                        <div class="progress-container">
+                            <div class="progress-item">
+                                <div class="progress-label">
+                                    <span>Steel Inspection (MTC, Welding)</span><span>95%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="--target-width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-label">
+                                    <span>Concrete Testing (Slump, Cubes)</span><span>90%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="--target-width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-label"><span>Soil & Asphalt Testing</span><span>85%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="--target-width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card reveal" style="transition-delay: 0.15s">
+                        <div class="skill-icon">📋</div>
+                        <h3>Codes & Standards</h3>
+                        <p>Deep understanding of international compliance.</p>
+                        <div class="progress-container">
+                            <div class="progress-item">
+                                <div class="progress-label"><span>ASTM & ACI</span><span>95%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="--target-width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-label"><span>BS (British Standards)</span><span>90%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="--target-width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-label"><span>IS (Indian Standards)</span><span>90%</span></div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="--target-width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= EXPERIENCE ================= -->
+        <section id="experience" class="section-3d">
+            <div class="bg-layer">
+                <div class="bg-waves">
+                    <svg viewBox="0 0 1440 900" preserveAspectRatio="none">
+                        <g class="wave-group-3">
+                            <path
+                                d="M0,700 C300,600 600,800 900,700 C1100,640 1300,740 1440,700"
+                                stroke="url(#waveGrad1)"
+                            />
+                        </g>
+                    </svg>
+                </div>
+                <div class="bg-mesh"></div>
+                <div class="bg-orb orb-1"></div>
+            </div>
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Career History</span>
+                    <h2>Professional Experience</h2>
+                    <p>A proven track record of ensuring quality and compliance across major construction projects.</p>
+                </div>
+
+                <div class="exp-grid">
+                    <!-- Job 1 -->
+                    <div class="exp-card reveal" style="transition-delay: 0.05s">
+                        <div class="exp-header">
+                            <div class="exp-title">
+                                <h3>QA/QC Engineer</h3>
+                                <h4>Al Munayaz Co. — Riyadh, KSA</h4>
+                            </div>
+                            <span class="exp-date">Mar 2024 - Present</span>
+                        </div>
+                        <ul>
+                            <li>
+                                Create and implement quality standards, procedures, and best practices for production,
+                                testing, and evaluation.
+                            </li>
+                            <li>
+                                Design and perform inspections, evaluations, and tests on materials, equipment, and
+                                finished products.
+                            </li>
+                            <li>
+                                Performed QA/QC inspection for structural steel fabrication & erection as per approved
+                                ITPs.
+                            </li>
+                            <li>
+                                Inspected incoming steel materials, MTCs, bolts, welding consumables and verified
+                                compliance with project specs.
+                            </li>
+                            <li>
+                                Monitored fit-up, welding activities, WPS/PQR compliance, welder qualifications and
+                                conducted visual inspection.
+                            </li>
+                            <li>
+                                Inspected surface preparation and painting/coating system (DFT check, adhesion test) as
+                                per spec.
+                            </li>
+                            <li>
+                                Conducted comprehensive testing and inspection on site and evaluation of soil, asphalt,
+                                and steel materials to ensure compliance with project specifications ASTM, ASHTO, and
+                                BS.
+                            </li>
+                            <li>
+                                Maintain meticulous records, including non-conformance reports (NCRs), test results, and
+                                quality checklists.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div class="exp-card reveal" style="transition-delay: 0.1s">
+                        <div class="exp-header">
+                            <div class="exp-title">
+                                <h3>QA/QC Engineer</h3>
+                                <h4>Shibh Al Jazira Contracting Co. — Riyadh, KSA</h4>
+                            </div>
+                            <span class="exp-date">Apr 2022 - Mar 2024</span>
+                        </div>
+                        <ul>
+                            <li>
+                                Inspected the tests to ensure methods comply with IS, ASTM, ASHTO, and BS
+                                specifications.
+                            </li>
+                            <li>
+                                Prepared inspection reports, NCRs, punch lists and ensured closure with corrective
+                                actions.
+                            </li>
+                            <li>
+                                Conducted inspection of rebar delivery, grade (60), size, MTC verification and storage
+                                condition.
+                            </li>
+                            <li>
+                                Checked rebar cutting, bending, lapping, spacing, cover and bar schedule as per ACI 318
+                                & shop drawings.
+                            </li>
+                            <li>
+                                Collected, analyzed, and reported on quality data, identifying trends and areas for
+                                improvement.
+                            </li>
+                            <li>
+                                Evaluated and qualified new suppliers to ensure incoming materials meet quality
+                                requirements.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 3 -->
+                    <div class="exp-card reveal" style="transition-delay: 0.15s">
+                        <div class="exp-header">
+                            <div class="exp-title">
+                                <h3>Civil Site Engineer</h3>
+                                <h4>Variant Builders Pvt. Ltd. — India</h4>
+                            </div>
+                            <span class="exp-date">Aug 2019 - Jul 2020</span>
+                        </div>
+                        <ul>
+                            <li>
+                                Inspected reinforcement placement for footings, columns, beams, slabs, walls before
+                                concrete pour.
+                            </li>
+                            <li>
+                                Verified rebar couplers, mechanical splicing and performed bend test / tensile test.
+                            </li>
+                            <li>Inspected tests and ensured methods comply with specifications.</li>
+                            <li>Maintained accurate records of lab data to ensure quality control.</li>
+                            <li>
+                                Trained production staff, technicians, and other professionals on quality control
+                                principles.
+                            </li>
+                            <li>
+                                Conducted internal audits to ensure compliance with quality management systems (QMS)
+                                like ISO standards.
+                            </li>
+                            <li>
+                                Led root cause analysis (RCA) for defects and implemented corrective and preventive
+                                actions (CAPA).
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 4 -->
+                    <div class="exp-card reveal" style="transition-delay: 0.2s">
+                        <div class="exp-header">
+                            <div class="exp-title">
+                                <h3>Civil Site Engineer</h3>
+                                <h4>VK Construction — India</h4>
+                            </div>
+                            <span class="exp-date">Jul 2018 - Jul 2019</span>
+                        </div>
+                        <ul>
+                            <li>Involved in constructing the DG Building at Thiar Jail, Delhi, India.</li>
+                            <li>
+                                Monitored the condition of materials and equipment and reported any issues immediately.
+                            </li>
+                            <li>
+                                Participated in laboratory meetings to discuss results and make recommendations for
+                                improvement.
+                            </li>
+                            <li>Attended Internal and External Audits.</li>
+                            <li>Ensured the project complied with legal requirements, especially health and safety.</li>
+                            <li>Monitored operations to ensure they meet production standards.</li>
+                            <li>Inspected, tested, and measured materials using calipers, gauges, or micrometers.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CERTIFICATIONS ================= -->
+        <section id="certifications" class="section-3d">
+            <div class="bg-layer">
+                <div class="bg-waves">
+                    <svg viewBox="0 0 1440 600" preserveAspectRatio="none">
+                        <g class="wave-group-2">
+                            <path
+                                d="M0,200 C300,50 600,350 900,200 C1150,100 1350,250 1440,200"
+                                stroke="url(#waveGrad1)"
+                            />
+                        </g>
+                    </svg>
+                </div>
+                <div class="bg-dots"></div>
+                <div class="bg-orb orb-3"></div>
+            </div>
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Credentials</span>
+                    <h2>Licenses & Certifications</h2>
+                    <p>Recognized qualifications validating my expertise and commitment to industry standards.</p>
+                </div>
+
+                <div class="cert-grid">
+                    <div class="cert-card reveal" style="transition-delay: 0.05s">
+                        <div class="cert-icon">🇸🇦</div>
+                        <div class="cert-text">
+                            <h3>Saudi Council of Engineers (SCE)</h3>
+                            <p>
+                                Professional Accreditation Category: Engineer<br />Membership No: 12598905<br />Valid
+                                until: 24 June 2027
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card reveal" style="transition-delay: 0.1s">
+                        <div class="cert-icon">📜</div>
+                        <div class="cert-text">
+                            <h3>ISO 9001:2015 (QMS)</h3>
+                            <p>Certified Internal Auditor — Quality Management Systems.</p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card reveal" style="transition-delay: 0.15s">
+                        <div class="cert-icon">🌿</div>
+                        <div class="cert-text">
+                            <h3>ISO 14001:2015 (EMS)</h3>
+                            <p>Certified Internal Auditor — Environmental Management Systems.</p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card reveal" style="transition-delay: 0.2s">
+                        <div class="cert-icon">🦺</div>
+                        <div class="cert-text">
+                            <h3>ISO 45001:2018 (OH&S)</h3>
+                            <p>Certified Internal Auditor — Occupational Health & Safety.</p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card reveal" style="transition-delay: 0.25s">
+                        <div class="cert-icon">🌍</div>
+                        <div class="cert-text">
+                            <h3>Numerical Optimization Techniques</h3>
+                            <p>Certificate of Training by Prof. Zenevel Fuat Toprak (Dicle University Turkey).</p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card reveal" style="transition-delay: 0.3s">
+                        <div class="cert-icon">🌉</div>
+                        <div class="cert-text">
+                            <h3>Earthquake Resistant Design (Staad Pro)</h3>
+                            <p>
+                                Training from B&S Directorate - RDSO, related to analysis & design of railway steel and
+                                concrete bridges.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= DOCUMENTS ================= -->
+        <section id="documents" class="section-3d">
+            <div class="bg-layer">
+                <div class="bg-waves">
+                    <svg viewBox="0 0 1440 800" preserveAspectRatio="none">
+                        <g class="wave-group-1">
+                            <path
+                                d="M0,400 C200,200 400,600 600,400 C800,200 1000,600 1200,400 C1350,300 1440,400 1440,400"
+                                stroke="url(#waveGrad1)"
+                            />
+                        </g>
+                    </svg>
+                </div>
+                <div class="bg-mesh"></div>
+                <div class="bg-orb orb-4"></div>
+            </div>
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Verified Documents</span>
+                    <h2>Certificates & Credentials</h2>
+                    <p>Click on any document to view the full-size original image.</p>
+                </div>
+
+                <!-- Category 1: Educational Degrees -->
+                <div class="doc-category reveal">
+                    <h3><span></span> Educational Degrees</h3>
+                    <div class="doc-grid">
+                        <a
+                            href="https://raw.githubusercontent.com/MKareem57/profile/main/images/B-tech%20(bachelor)%20degree%20Attested.jpg"
+                            target="_blank"
+                            class="doc-card"
+                        >
+                            <div class="doc-img-wrap">
+                                <img
+                                    src="https://raw.githubusercontent.com/MKareem57/profile/main/images/B-tech%20(bachelor)%20degree%20Attested.jpg"
+                                    alt="B.Tech Attested"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <div class="doc-info">
+                                <h4>B.Tech Degree (Attested)</h4>
+                                <p>Bachelor of Technology - Civil Engineering</p>
+                            </div>
+                        </a>
+                        <a
+                            href="https://raw.githubusercontent.com/MKareem57/profile/main/images/B-tech%20(bachelor)%20degree.jpg"
+                            target="_blank"
+                            class="doc-card"
+                        >
+                            <div class="doc-img-wrap">
+                                <img
+                                    src="https://raw.githubusercontent.com/MKareem57/profile/main/images/B-tech%20(bachelor)%20degree.jpg"
+                                    alt="B.Tech Degree"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <div class="doc-info">
+                                <h4>B.Tech Degree (Original)</h4>
+                                <p>Bachelor of Technology - Civil Engineering</p>
+                            </div>
+                        </a>
+                        <a
+                            href="https://raw.githubusercontent.com/MKareem57/profile/main/images/M-tech%20(Master)%20Degree.jpg"
+                            target="_blank"
+                            class="doc-card"
+                        >
+                            <div class="doc-img-wrap">
+                                <img
+                                    src="https://raw.githubusercontent.com/MKareem57/profile/main/images/M-tech%20(Master)%20Degree.jpg"
+                                    alt="M.Tech Degree"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <div class="doc-info">
+                                <h4>M.Tech Degree (Original)</h4>
+                                <p>Master of Technology - Environmental Engineering</p>
+                            </div>
+                        </a>
+                        <a
+                            href="https://raw.githubusercontent.com/MKareem57/profile/main/images/M-tech%20(Master)%20degree%20Attested.jpg"
+                            target="_blank"
+                            class="doc-card"
+                        >
+                            <div class="doc-img-wrap">
+                                <img
+                                    src="https://raw.githubusercontent.com/MKareem57/profile/main/images/M-tech%20(Master)%20degree%20Attested.jpg"
+                                    alt="M.Tech Attested"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <div class="doc-info">
+                                <h4>M.Tech Degree (Attested)</h4>
+                                <p>Master of Technology - Environmental Engineering</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Category 2: Professional Certifications -->
+                <div class="doc-category reveal">
+                    <h3><span></span> Professional Certifications</h3>
+                    <div class="doc-grid">
+                        <a
+                            href="https://raw.githubusercontent.com/MKareem57/profile/main/images/SCE%20Certificate.jpg"
+                            target="_blank"
+                            class="doc-card"
+                        >
+                            <div class="doc-img-wrap">
+                                <img
+                                    src="https://raw.githubusercontent.com/MKareem57/profile/main/images/SCE%20Certificate.jpg"
+                                    alt="SCE Certificate"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <div class="doc-info">
+                                <h4>Saudi Council of Engineers (SCE)</h4>
+                                <p>Professional Accreditation Certificate</p>
+                            </div>
+                        </a>
+                        <a
+                            href="https://raw.githubusercontent.com/MKareem57/profile/main/images/Summer%20Training.jpg"
+                            target="_blank"
+                            class="doc-card"
+                        >
+                            <div class="doc-img-wrap">
+                                <img
+                                    src="https://raw.githubusercontent.com/MKareem57/profile/main/images/Summer%20Training.jpg"
+                                    alt="Summer Training"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <div class="doc-info">
+                                <h4>Summer Training Certificate</h4>
+                                <p>Earthquake Resistant Design (Staad Pro)</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Category 3: Experience Letters -->
+                <div class="doc-category reveal">
+                    <h3><span></span> Experience Letters</h3>
+                    <div class="doc-grid">
+                        <a
+                            href="https://raw.githubusercontent.com/MKareem57/profile/main/images/VK%20experience.jpg"
+                            target="_blank"
+                            class="doc-card"
+                        >
+                            <div class="doc-img-wrap">
+                                <img
+                                    src="https://raw.githubusercontent.com/MKareem57/profile/main/images/VK%20experience.jpg"
+                                    alt="VK Experience"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <div class="doc-info">
+                                <h4>VK Construction</h4>
+                                <p>Civil Site Engineer Experience Letter</p>
+                            </div>
+                        </a>
+                        <a
+                            href="https://raw.githubusercontent.com/MKareem57/profile/main/images/Variant%20experience.jpg"
+                            target="_blank"
+                            class="doc-card"
+                        >
+                            <div class="doc-img-wrap">
+                                <img
+                                    src="https://raw.githubusercontent.com/MKareem57/profile/main/images/Variant%20experience.jpg"
+                                    alt="Variant Experience"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <div class="doc-info">
+                                <h4>Variant Builders</h4>
+                                <p>Civil Site Engineer Experience Letter</p>
+                            </div>
+                        </a>
+                        <a
+                            href="https://raw.githubusercontent.com/MKareem57/profile/main/images/shibh%20aljazira%20experience.jpg"
+                            target="_blank"
+                            class="doc-card"
+                        >
+                            <div class="doc-img-wrap">
+                                <img
+                                    src="https://raw.githubusercontent.com/MKareem57/profile/main/images/shibh%20aljazira%20experience.jpg"
+                                    alt="Shibh Al Jazira Experience"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <div class="doc-info">
+                                <h4>Shibh Al Jazira</h4>
+                                <p>QA/QC Engineer Experience Letter</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT ================= -->
+        <section id="contact" class="section-3d">
+            <div class="bg-layer">
+                <div class="bg-waves">
+                    <svg viewBox="0 0 1440 600" preserveAspectRatio="none">
+                        <g class="wave-group-2">
+                            <path
+                                d="M0,300 C300,150 600,450 900,300 C1150,200 1350,400 1440,300"
+                                stroke="url(#waveGrad1)"
+                            />
+                            <path
+                                d="M0,320 C300,170 600,470 900,320 C1150,220 1350,420 1440,320"
+                                stroke="url(#waveGrad1)"
+                            />
+                        </g>
+                    </svg>
+                </div>
+                <div class="bg-orb orb-1"></div>
+                <div class="bg-orb orb-4"></div>
+            </div>
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info reveal reveal-left">
+                        <span
+                            class="eyebrow"
+                            style="
+                                color: #93c5fd;
+                                background: rgba(37, 99, 235, 0.2);
+                                border-color: rgba(37, 99, 235, 0.3);
+                            "
+                            >Get In Touch</span
+                        >
+                        <h2>Let's Discuss Your Next Project</h2>
+                        <p>
+                            Available for QA/QC roles, site engineering, and consultancy in Riyadh and across Saudi
+                            Arabia.
+                        </p>
+
+                        <a href="tel:+966537836478" class="contact-item">
+                            <div class="ic">📞</div>
+                            <div class="txt"><strong>Mobile 1</strong><span>+966 537 836 478</span></div>
+                        </a>
+                        <a href="tel:+966570849844" class="contact-item">
+                            <div class="ic">📞</div>
+                            <div class="txt"><strong>Mobile 2</strong><span>+966 570 849 844</span></div>
+                        </a>
+                        <a href="mailto:mohammedkareem0507@gmail.com" class="contact-item">
+                            <div class="ic">✉️</div>
+                            <div class="txt"><strong>Email</strong><span>mohammedkareem0507@gmail.com</span></div>
+                        </a>
+                        <a
+                            href="https://linkedin.com/in/mohammedkareem0507"
+                            target="_blank"
+                            rel="noopener"
+                            class="contact-item"
+                        >
+                            <div class="ic">🔗</div>
+                            <div class="txt">
+                                <strong>LinkedIn</strong><span>linkedin.com/in/mohammedkareem0507</span>
+                            </div>
+                        </a>
+                        <div class="contact-item" style="cursor: default">
+                            <div class="ic">📍</div>
+                            <div class="txt"><strong>Location</strong><span>Riyadh, Saudi Arabia</span></div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form reveal reveal-right" id="contactForm" novalidate>
+                        <h3>Send a Message</h3>
+
+                        <div class="form-group">
+                            <input type="text" name="name" id="cf-name" placeholder="Your Name" required />
+                            <small class="error-msg">Please enter your name</small>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="email" id="cf-email" placeholder="Your Email" required />
+                            <small class="error-msg">Please enter a valid email</small>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="subject" id="cf-subject" placeholder="Subject" />
+                        </div>
+
+                        <div class="form-group">
+                            <textarea
+                                name="message"
+                                id="cf-message"
+                                placeholder="Tell me about your project..."
+                                required
+                            ></textarea>
+                            <small class="error-msg">Please write a message</small>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="arrow">→</span>
+                        </button>
+
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FOOTER ================= -->
+        <footer>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px">
+                        <div
+                            style="
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 14px;
+                                background: linear-gradient(135deg, #2563eb, #0891b2);
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                color: #fff;
+                                font-weight: 900;
+                                font-size: 1.1rem;
+                            "
+                        >
+                            MK
+                        </div>
+                        <div>
+                            <div style="color: #fff; font-weight: 800; font-size: 1.1rem">Mohammed Kareem</div>
+                            <div
+                                style="
+                                    font-size: 0.75rem;
+                                    color: #94a3b8;
+                                    letter-spacing: 1.5px;
+                                    text-transform: uppercase;
+                                "
+                            >
+                                Civil & QA/QC Engineer
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        Dedicated Civil Engineer and QA/QC Specialist with 8+ years of experience in ensuring material
+                        compliance, structural integrity, and quality management across major construction projects.
+                    </p>
+                    <div class="footer-social">
+                        <a
+                            href="https://linkedin.com/in/mohammedkareem0507"
+                            target="_blank"
+                            rel="noopener"
+                            title="LinkedIn"
+                            >in</a
+                        >
+                        <a href="https://wa.me/966570849844" target="_blank" rel="noopener" title="WhatsApp">Wa</a>
+                        <a href="mailto:mohammedkareem0507@gmail.com" title="Email">@</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#skills">Technical Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#documents">Documents</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Core Competencies</h4>
+                    <ul>
+                        <li><a href="#skills">Material Inspection</a></li>
+                        <li><a href="#skills">Structural Steel QA/QC</a></li>
+                        <li><a href="#skills">Concrete Testing</a></li>
+                        <li><a href="#skills">ISO Internal Auditing</a></li>
+                        <li><a href="#skills">AutoCAD & Staad Pro</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Details</h4>
+                    <!-- Added Second Mobile Number -->
+                    <a href="tel:+966537836478" class="footer-contact-line">
+                        <span class="fi">📞</span>
+                        <span>+966 537 836 478</span>
+                    </a>
+                    <a href="tel:+966570849844" class="footer-contact-line">
+                        <span class="fi">📞</span>
+                        <span>+966 570 849 844</span>
+                    </a>
+                    <a href="mailto:mohammedkareem0507@gmail.com" class="footer-contact-line">
+                        <span class="fi">✉️</span>
+                        <span>mohammedkareem0507@gmail.com</span>
+                    </a>
+                    <a
+                        href="https://linkedin.com/in/mohammedkareem0507"
+                        target="_blank"
+                        rel="noopener"
+                        class="footer-contact-line"
+                    >
+                        <span class="fi">🔗</span>
+                        <span>linkedin.com/in/mohammedkareem0507</span>
+                    </a>
+                    <div class="footer-contact-line" style="cursor: default">
+                        <span class="fi">📍</span>
+                        <span>Riyadh, Saudi Arabia</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="year"></span> Mohammed Kareem. All rights reserved.</p>
+                <p>Civil & QA/QC Engineer Portfolio</p>
+            </div>
+        </footer>
+
+        <!-- ================= WHATSAPP LIVE CHAT POPUP ================= -->
+        <div class="wa-chat-popup" id="waChatPopup">
+            <div class="wa-chat-head">
+                <button class="wa-chat-close" id="waChatClose" aria-label="Close chat">✕</button>
+                <div class="avatar">MK</div>
+                <div class="meta">
+                    <strong>Mohammed Kareem</strong>
+                    <small>Online — typically replies instantly</small>
+                </div>
+            </div>
+            <div class="wa-chat-body">
+                <div class="bubble">😊 Greeting! <br> I am Mohammed Kareem.</div>
+                <div class="bubble">
+                    I would be happy to discuss this with you. For more details, please feel free to message me.
+                </div>
+            </div>
+            <div class="wa-chat-actions">
+                <a
+                    href="https://wa.me/966537836478?text=Hello%20Mohammed%2C%20I%20saw%20your%20Resum%20and%2C%20want%20to%20discuss%20for%20job"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    💬 Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <a
+            href="https://wa.me/966537836478?text=Hello%20Mohammed%2C%20I%20saw%20your%20Resum%20and%2C%20want%20to%20discuss%20for%20job"
+            class="whatsapp-float"
+            id="waFloat"
+            target="_blank"
+            rel="noopener"
+            aria-label="Chat on WhatsApp"
+        >
+            <span class="wa-label">Chat with me on WhatsApp 💬</span>
+            <span class="wa-btn">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16 .5C7.44.5.5 7.44.5 16c0 2.82.74 5.47 2.03 7.76L.5 31.5l7.94-2.04A15.4 15.4 0 0016 31.5c8.56 0 15.5-6.94 15.5-15.5S24.56.5 16 .5zm0 28.3c-2.53 0-4.9-.68-6.94-1.87l-.5-.3-4.72 1.21 1.26-4.6-.32-.51A12.73 12.73 0 013.2 16C3.2 8.93 8.93 3.2 16 3.2S28.8 8.93 28.8 16 23.07 28.8 16 28.8zm7.05-9.55c-.39-.19-2.29-1.13-2.64-1.26-.36-.13-.62-.19-.88.19-.26.39-1 1.26-1.23 1.52-.22.26-.45.29-.84.1-.39-.19-1.63-.6-3.1-1.91-1.15-1.02-1.92-2.29-2.15-2.68-.22-.39-.02-.6.17-.79.17-.17.39-.45.58-.68.19-.22.26-.39.39-.65.13-.26.06-.49-.03-.68-.1-.19-.88-2.11-1.2-2.89-.32-.76-.64-.65-.88-.67l-.75-.01c-.26 0-.68.1-1.03.49-.36.39-1.35 1.32-1.35 3.21 0 1.89 1.38 3.72 1.58 3.98.19.26 2.72 4.16 6.6 5.83.92.4 1.64.63 2.2.81.93.29 1.77.25 2.44.15.74-.11 2.29-.94 2.61-1.84.32-.9.32-1.68.22-1.84-.1-.16-.36-.26-.75-.45z"
+                    />
+                </svg>
+            </span>
+        </a>
+
+        <!-- Back to Top -->
+        <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+        <script>
+            /* ============ YEAR ============ */
+            document.getElementById("year").textContent = new Date().getFullYear();
+
+            /* ============ MOBILE MENU ============ */
+            const menuToggle = document.getElementById("menuToggle");
+            const navLinks = document.getElementById("navLinks");
+
+            menuToggle.addEventListener("click", (e) => {
+                e.stopPropagation();
+                navLinks.classList.toggle("open");
+                menuToggle.textContent = navLinks.classList.contains("open") ? "✕" : "☰";
+            });
+
+            navLinks.querySelectorAll("a").forEach((link) => {
+                link.addEventListener("click", () => {
+                    navLinks.classList.remove("open");
+                    menuToggle.textContent = "☰";
+                });
+            });
+
+            document.addEventListener("click", (e) => {
+                if (
+                    navLinks.classList.contains("open") &&
+                    !navLinks.contains(e.target) &&
+                    !menuToggle.contains(e.target)
+                ) {
+                    navLinks.classList.remove("open");
+                    menuToggle.textContent = "☰";
+                }
+            });
+
+            /* ============ ACTIVE NAV LINK ============ */
+            const sections = document.querySelectorAll("section[id]");
+            const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
+
+            function setActiveLink() {
+                let current = "home";
+                sections.forEach((sec) => {
+                    const top = sec.offsetTop - 150;
+                    if (window.pageYOffset >= top) current = sec.id;
+                });
+                navAnchors.forEach((a) => {
+                    a.classList.remove("active");
+                    if (a.getAttribute("href") === "#" + current) a.classList.add("active");
+                });
+            }
+
+            /* ============ SCROLL PROGRESS + BACK TO TOP ============ */
+            const progress = document.getElementById("scrollProgress");
+            const header = document.getElementById("header");
+            const backTop = document.getElementById("backTop");
+
+            function onScroll() {
+                const st = window.pageYOffset;
+                const dh = document.documentElement.scrollHeight - window.innerHeight;
+                progress.style.width = (st / dh) * 100 + "%";
+                header.classList.toggle("scrolled", st > 40);
+                backTop.classList.toggle("visible", st > 400);
+                setActiveLink();
+            }
+            window.addEventListener("scroll", onScroll, { passive: true });
+            backTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+            /* ============ SCROLL REVEAL ============ */
+            const revealObserver = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((e) => {
+                        if (e.isIntersecting) {
+                            e.target.classList.add("visible");
+                            revealObserver.unobserve(e.target);
+                        }
+                    });
+                },
+                { threshold: 0.12, rootMargin: "0px 0px -50px 0px" }
+            );
+            document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
+
+            /* ============ WHATSAPP CHAT POPUP ============ */
+            const waChatPopup = document.getElementById("waChatPopup");
+            const waChatClose = document.getElementById("waChatClose");
+            let chatShown = false;
+
+            setTimeout(() => {
+                if (!chatShown && sessionStorage.getItem("waChatClosed") !== "yes") {
+                    waChatPopup.classList.add("show");
+                    chatShown = true;
+                }
+            }, 4000);
+
+            waChatClose.addEventListener("click", (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                waChatPopup.classList.remove("show");
+                sessionStorage.setItem("waChatClosed", "yes");
+            });
+
+            /* ============ EMAIL FORM HANDLER ============ */
+            const RECIPIENT_EMAIL = "mohammedkareem0507@gmail.com";
+            const form = document.getElementById("contactForm");
+            const submitBtn = document.getElementById("submitBtn");
+            const statusBox = document.getElementById("formStatus");
+            const nameInput = document.getElementById("cf-name");
+            const emailInput = document.getElementById("cf-email");
+            const subjInput = document.getElementById("cf-subject");
+            const msgInput = document.getElementById("cf-message");
+
+            [nameInput, emailInput, msgInput].forEach((inp) => {
+                inp.addEventListener("input", () => inp.parentElement.classList.remove("error"));
+            });
+
+            function isValidEmail(v) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim());
+            }
+
+            function showStatus(type, message) {
+                statusBox.className = "form-status show " + type;
+                statusBox.textContent = message;
+                if (type === "success") {
+                    setTimeout(() => {
+                        statusBox.classList.remove("show");
+                    }, 6000);
+                }
+            }
+
+            function validateForm() {
+                let ok = true;
+                if (!nameInput.value.trim()) {
+                    nameInput.parentElement.classList.add("error");
+                    ok = false;
+                }
+                if (!isValidEmail(emailInput.value)) {
+                    emailInput.parentElement.classList.add("error");
+                    ok = false;
+                }
+                if (!msgInput.value.trim() || msgInput.value.trim().length < 5) {
+                    msgInput.parentElement.classList.add("error");
+                    ok = false;
+                }
+                return ok;
+            }
+
+            form.addEventListener("submit", async (e) => {
+                e.preventDefault();
+
+                if (!validateForm()) {
+                    showStatus("error", "⚠️ Please fix the highlighted fields.");
+                    return;
+                }
+
+                const data = {
+                    name: nameInput.value.trim(),
+                    email: emailInput.value.trim(),
+                    subject: subjInput.value.trim() || "New message from portfolio",
+                    message: msgInput.value.trim(),
+                    date: new Date().toLocaleString(),
+                };
+
+                submitBtn.classList.add("loading");
+                submitBtn.querySelector(".btn-text").textContent = "Sending";
+
+                try {
+                    const subject = encodeURIComponent(`[Portfolio] ${data.subject}`);
+                    const body = encodeURIComponent(
+                        `Name: ${data.name}\nEmail: ${data.email}\nDate: ${data.date}\n\nMessage:\n${data.message}`
+                    );
+                    window.location.href = `mailto:${RECIPIENT_EMAIL}?subject=${subject}&body=${body}`;
+
+                    showStatus("success", "📧 Your email app is opening — just hit Send!");
+                    setTimeout(() => form.reset(), 1500);
+                } catch (err) {
+                    console.error("Send failed:", err);
+                    showStatus("error", "⚠️ Something went wrong. Please email me directly.");
+                } finally {
+                    submitBtn.classList.remove("loading");
+                    submitBtn.querySelector(".btn-text").textContent = "Send Message";
+                }
+            });
+
+            /* ============ DYNAMIC PRINT RESUME LOGIC ============ */
+            function printResume() {
+                // 1. Create a hidden iframe for clean printing
+                const iframe = document.createElement("iframe");
+                iframe.style.position = "absolute";
+                iframe.style.width = "0";
+                iframe.style.height = "0";
+                iframe.style.border = "none";
+                document.body.appendChild(iframe);
+
+                const doc = iframe.contentWindow.document;
+
+                // 2. Extract content dynamically from the webpage
+                const aboutText = document.querySelector(".about-text").innerHTML;
+
+                // Extract Experience Cards
+                let experienceHTML = "";
+                document.querySelectorAll(".exp-card").forEach((card) => {
+                    const title = card.querySelector("h3").innerText;
+                    const company = card.querySelector("h4").innerText;
+                    const date = card.querySelector(".exp-date").innerText;
+                    const list = card.querySelector("ul").innerHTML;
+
+                    experienceHTML += `
+        <div class="job">
+          <div class="job-header">
+            <span class="job-title">${title}</span>
+            <span class="job-date">${date}</span>
+          </div>
+          <div class="job-company">${company}</div>
+          <ul>${list}</ul>
+        </div>
+      `;
+                });
+
+                // Extract Skills (Education & Certifications are hardcoded based on content provided in section 3)
+                const certificationsList = `
+      <ul>
+        <li><strong>Saudi Council of Engineers (SCE):</strong> Professional Accreditation (Membership No: 12598905). Valid until June 2027.</li>
+        <li><strong>ISO 9001:2015 (QMS):</strong> Certified Internal Auditor.</li>
+        <li><strong>ISO 14001:2015 (EMS):</strong> Certified Internal Auditor.</li>
+        <li><strong>ISO 45001:2018 (OH&S):</strong> Certified Internal Auditor.</li>
+        <li><strong>Numerical Optimization Techniques:</strong> Certificate of Training by Prof. Zenevel Fuat Toprak (Dicle University Turkey).</li>
+        <li><strong>Earthquake Resistant Design (Staad Pro):</strong> Training from B&S Directorate - RDSO, related to analysis & design of railway steel and concrete bridges.</li>
+      </ul>
+    `;
+
+                const techSkills = `
+      <div class="skills-list">
+        <div><span>Software:</span> AutoCAD, Staad Pro, Microsoft Office, LIMS</div>
+        <div><span>Standards:</span> ASTM, ACI, IS, BS, ASHTO</div>
+        <div><span>Testing:</span> Soil, Asphalt, Steel, Concrete, Rebar</div>
+        <div><span>Auditing:</span> QMS, EMS, OH&S Internal Audits</div>
+      </div>
+    `;
+
+                const coreCompetencies = `
+      <div class="skills-list">
+        <div>• Material Inspection</div>
+        <div>• Project Management</div>
+        <div>• QA/QC Auditing</div>
+        <div>• Structural Steel</div>
+        <div>• Concrete Technology</div>
+        <div>• Problem Solving</div>
+        <div>• NCR & CAPA Management</div>
+        <div>• Supplier Evaluation</div>
+      </div>
+    `;
+
+                // 3. Write the dynamic A4 Resume format into the iframe
+                doc.open();
+                doc.write(`
+      <html>
+      <head>
+        <title>Resume - Mohammed Kareem</title>
+        <style>
+          @page { margin: 20px; size: A4; }
+          /* Font sizes increased here */
+          body { font-family: 'Segoe UI', Arial, sans-serif; color: #333; line-height: 1.6; font-size: 12pt; }
+          
+          /* Header with photo */
+          .header-container { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #2563eb; padding-bottom: 15px; margin-bottom: 20px; }
+          .header-text { flex: 1; }
+          .header-text h1 { margin: 0; font-size: 26pt; color: #1e293b; }
+          .header-text h2 { margin: 5px 0 10px 0; font-size: 15pt; color: #2563eb; font-weight: normal; text-transform: uppercase; letter-spacing: 1px; }
+          .contact-info { font-size: 11pt; color: #555; }
+          .header-photo { width: 110px; height: 130px; border-radius: 8px; object-fit: cover; border: 2px solid #0c215b; margin-left: 20px; }
+          
+          /* Sections */
+          .section-title { font-size: 14pt; font-weight: bold; color: #1e293b; border-bottom: 1px solid #ccc; padding-bottom: 3px; margin-top: 20px; margin-bottom: 10px; text-transform: uppercase; }
+          .job { margin-bottom: 15px; }
+          .job-header { display: flex; justify-content: space-between; font-weight: bold; font-size: 12pt; }
+          .job-title { color: #2563eb; }
+          .job-date { color: #555; }
+          .job-company { font-style: italic; color: #444; margin-bottom: 5px; }
+          ul { margin: 5px 0 10px 20px; padding: 0; }
+          li { margin-bottom: 5px; }
+          .skills-list { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; margin-bottom: 15px; font-size: 11.5pt; }
+          .skills-list span { font-weight: bold; color: #1e293b; }
+          p { font-size: 12pt; margin-bottom: 10px; }
+          
+          /* Note: Page break class removed to keep content tight without spaces */
+        </style>
+      </head>
+      <body>
+        
+        <!-- Header Section -->
+        <div class="header-container">
+          <div class="header-text">
+            <h1>Mohammed Kareem</h1>
+            <h2>Civil & QA/QC Engineer</h2>
+            <div class="contact-info">
+              Riyadh, Saudi Arabia | +966 537 836 478 | mohammedkareem0507@gmail.com<br>
+              linkedin.com/in/mohammedkareem0507
+            </div>
+          </div>
+          <!-- Profile Photo -->
+          <img src="https://raw.githubusercontent.com/MKareem57/profile/main/images/pic4.jpeg" class="header-photo" alt="Profile Photo" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=175&q=80'">
+        </div>
+
+        <div class="section-title">Professional Profile</div>
+        <p>To become an expert in the field of Civil and Quality Engineering, I have gained eight years of experience in Material Inspection, Testing, and Construction. I am looking forward to a career opportunity in Civil, Quality Engineering, and Consultancy.</p>
+
+        <div class="section-title">Experience</div>
+        ${experienceHTML}
+
+        <!-- Education, Certifications, etc. placed directly after Experience (no page break) -->
+        <div class="section-title">Education</div>
+        <div class="job">
+          <div class="job-header">
+            <span class="job-title">Master of Technology in Environmental Engineering</span>
+            <span class="job-date">2021 - 2022</span>
+          </div>
+          <div class="job-company">Amity University, Uttar Pradesh (First Division)</div>
+        </div>
+        <div class="job">
+          <div class="job-header">
+            <span class="job-title">Bachelor of Technology in Civil Engineering</span>
+            <span class="job-date">2014 - 2018</span>
+          </div>
+          <div class="job-company">Dr. A.P.J. Abdul Kalam Technical University, Uttar Pradesh (First Division)</div>
+        </div>
+
+        <div class="section-title">Certifications & Licenses</div>
+        ${certificationsList}
+
+        <div class="section-title">Technical Skills</div>
+        ${techSkills}
+
+        <div class="section-title">Core Competencies</div>
+        ${coreCompetencies}
+
+        <div class="section-title">Languages</div>
+        <p>English, Arabic, Urdu, Hindi, Spanish</p>
+      </body>
+      </html>
+    `);
+                doc.close();
+
+                // 4. Trigger Print
+                iframe.contentWindow.focus();
+                iframe.contentWindow.print();
+
+                // 5. Clean up
+                setTimeout(() => {
+                    document.body.removeChild(iframe);
+                }, 1000);
+            }
+        </script>
+    </body>
+</html>
